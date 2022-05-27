@@ -17,7 +17,7 @@ Alternativ kann das Repository als ZIP-Datei heruntergeladen, an beliebiger Stel
 Durch das Editieren der im Repository enthaltenen `resources/resources.js` können weitreichende individuelle Anpassungen vorgenommen werden.
 
 ## Datenverarbeitung
-An keiner Stelle werden Benutzer-spezifische Daten dauerhaft gespeichert. Es handelt sich um reine Selbsttests mit direktem Feedback, was richtig/falsch beantwortet wurde.
+An keiner Stelle werden Benutzer-spezifische Daten verarbeitet. Es handelt sich um reine Selbsttests mit direktem Feedback, was richtig/falsch beantwortet wurde.
 
 ## Hintergrundinformationen
 Der ER-REL-Trainer wurde an der Hochschule Bonn-Rhein-Sieg im Rahmen des EILD-Projekts von André Kless entwickelt.
