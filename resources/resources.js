@@ -31,22 +31,22 @@ export const phrases = [
   {
     "text": "Eine Stadt kann ein U-Bahnnetz haben.",
     "relationship": [ "Stadt", "hat", "U-Bahnnetz" ],
-    "solution": [ "c", "1" ]
+    "solution": [ "1", "c" ]
   },
   {
     "text": "Zu jedem Topf gibt es einen Deckel, es gibt allerdings auch Töpfe ohne Deckel (z.B. Wok).",
     "relationship": [ "Topf", "hat", "Deckel" ],
-    "solution": [ "1", "c" ]
+    "solution": [ "c", "1" ]
   },
   {
     "text": "Ein Planet kann Monde haben, die ihn umkreisen.",
     "relationship": [ "Planet", "hat", "Mond" ],
-    "solution": [ "cn", "1" ]
+    "solution": [ "1", "cn" ]
   },
   {
     "text": "Ein Rucksack kann mehrere Gegenstände enthalten.",
     "relationship": [ "Rucksack", "enthält", "Gegenstand" ],
-    "solution": [ "cn", "c" ]
+    "solution": [ "c", "cn" ]
   },
   {
     "text": "Kunden kaufen Produkte.",
@@ -56,22 +56,22 @@ export const phrases = [
   {
     "text": "Ein Mensch kann keine, eine oder mehrere Staatsangehörigkeiten besitzen.",
     "relationship": [ "Mensch", "besitzt", "Staatsangehörigkeit" ],
-    "solution": [ "cn", "n" ]
+    "solution": [ "n", "cn" ]
   },
   {
     "text": "Ein Buch hat mehrere Seiten.",
     "relationship": [ "Buch", "hat", "Seite" ],
-    "solution": [ "n", "1" ]
+    "solution": [ "1", "n" ]
   },
   {
     "text": "Ein Wald hat Bäume.",
     "relationship": [ "Wald", "hat", "Bäume" ],
-    "solution": [ "n", "c" ]
+    "solution": [ "c", "n" ]
   },
   {
     "text": "Auf einem Rezept stehen Zutaten.",
     "relationship": [ "Rezept", "hat", "Zutat" ],
-    "solution": [ "n", "cn" ]
+    "solution": [ "cn", "n" ]
   },
   {
     "text": "Ein Haus hat Eigentümer und Eigentümer haben Häuser.",
