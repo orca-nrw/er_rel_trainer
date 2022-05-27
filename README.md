@@ -1,12 +1,20 @@
 # ER-REL-Trainer
 
-## Inhaltliche Beschreibung
-Gegeben ist ein ER-Diagramm, das eine binäre Beziehung zwischen zwei Entitäten zeigt. Ihre Aufgabe ist es das ER-Diagramm in ein logisches relationales Schema zu überführen und dafür die nötigen Tabellen anzulegen, darin die erforderlichen Schlüsselattribute zu ergänzen und die Richtung festzulegen, in der die Tabellen miteinander in Beziehung stehen.
+## Beschreibung
+Mit dem ER-REL-Trainer wird die Überführung einer Beziehung zwischen zwei Entitäten eines ER-Diagramms in ein logisches relationales Schema trainiert. Es gilt die nötigen Tabellen anzulegen, die erforderlichen Schlüsselattribute zu ergänzen und die Richtung festzulegen, in der die Tabellen miteinander in Beziehung stehen.
 
-Der Trainer kann hier ausprobiert werden: https://eild-nrw.github.io/er_rel_trainer/
+## Installation
+Diese Webanwendung kann über GitHub Pages ohne Installation direkt genutzt werden: https://eild-nrw.github.io/er_rel_trainer/.
+
+Alternativ kann das Repository als ZIP-Datei heruntergeladen, an beliebiger Stelle entpackt und durch den Aufruf der enthaltenen `index.html` gestartet werden.
+
+Voraussetzung ist ein aktueller Webbrowser mit aktiviertem JavaScript.
+
+## Anpassbarkeit
+Durch das Editieren der im Repository enthaltenen `configs.js` können weitreichende individuelle Anpassungen vorgenommen werden.
 
 ## Datenverarbeitung
-An keiner Stelle werden bei der Nutzung des ER-Trainers Benutzer-spezifische Daten dauerhaft gespeichert. Es handelt sich um einen reinen Selbsttest, bei dem der Lernende ein Feedback erhält, was er/sie richtig/falsch beantwortet hat.
+An keiner Stelle werden Benutzer-spezifische Daten dauerhaft gespeichert. Es handelt sich um reine Selbsttests mit direktem Feedback, was richtig/falsch beantwortet wurde.
 
 ## Hintergrundinformationen
 Der ER-REL-Trainer wurde an der Hochschule Bonn-Rhein-Sieg im Rahmen des EILD-Projekts von André Kless entwickelt.
