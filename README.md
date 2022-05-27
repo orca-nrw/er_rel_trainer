@@ -3,12 +3,15 @@
 ## Beschreibung
 Mit dem ER-REL-Trainer wird die Überführung einer Beziehung zwischen zwei Entitäten eines ER-Diagramms in ein logisches relationales Schema trainiert. Es gilt die nötigen Tabellen anzulegen, die erforderlichen Schlüsselattribute zu ergänzen und die Richtung festzulegen, in der die Tabellen miteinander in Beziehung stehen.
 
+## Systemanforderungen
+Voraussetzung ist ein aktueller Webbrowser mit aktiviertem JavaScript.
+
 ## Installation
-Diese Webanwendung kann über GitHub Pages ohne Installation direkt genutzt werden: https://eild-nrw.github.io/er_rel_trainer/.
+Die Webanwendung kann über GitHub Pages ohne Installation über die folgende Web-URL genutzt werden: https://eild-nrw.github.io/er_rel_trainer/.
 
 Alternativ kann das Repository als ZIP-Datei heruntergeladen, an beliebiger Stelle entpackt und durch den Aufruf der enthaltenen `index.html` gestartet werden.
 
-Voraussetzung ist ein aktueller Webbrowser mit aktiviertem JavaScript.
+Über die Web-URL ist die Webanwendung immer auf dem neusten Stand und muss nicht von Hand aktualisiert werden. Dafür hat man bei der ZIP-Variante den Vorteil einer von GitHub unabhängigen Version mit weitreichende individueller Anpassbarkeit.
 
 ## Anpassbarkeit
 Durch das Editieren der im Repository enthaltenen `configs.js` können weitreichende individuelle Anpassungen vorgenommen werden.
