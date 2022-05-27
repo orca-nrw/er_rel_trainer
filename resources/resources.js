@@ -9,17 +9,17 @@
  * @type {Object}
  */
 export const config = {
-  "css.1.1": "./resources/styles.css",
-  "feedback": true,
-  "legend": true,
-  "number": 5,
-  "retry": true,
-  "show_solution": true,
-  "shuffle": true
+  "css.1.1": "./resources/styles.css",  // Layout
+  "feedback": true,                     // Direktes Feedback
+  "legend": true,                       // "Legende"-Button
+  "number": 5,                          // Anzahl der Phrasen, die abgefragt werden.
+  "retry": true,                        // "Korrigieren"-Button
+  "show_solution": true,                // "Zeige Lösung"-Button
+  "shuffle": true                       // Phrasen mischen
 };
 
 /**
- * default phrases data
+ * phrases data
  * @type {Object[]}
  */
 export const phrases = [
@@ -81,7 +81,7 @@ export const phrases = [
 ];
 
 /**
- * german texts and labels
+ * texts and labels
  * @type {Object}
  */
 export const text = {
@@ -148,7 +148,7 @@ export const text = {
 };
 
 /**
- * default notations data
+ * notations data
  * @type {Object.<string,Object>}
  */
 export const notations = {

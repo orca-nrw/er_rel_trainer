@@ -178,7 +178,7 @@ export function main( instance, state, phrase, phrase_nr, events ) {
       </div>
     </main>
     <footer class="mx-3 mt-3 text-center">
-      <img src="https://ccmjs.github.io/eild/logos.jpg"> <!-- Logos -->
+      <img src="./resources/img/logos.jpg"> <!-- Logos -->
     </footer>
   `;
 
