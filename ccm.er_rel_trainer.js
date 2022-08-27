@@ -52,8 +52,8 @@
       "html": [ "ccm.load", { "url": "./resources/templates.js", "type": "module" } ],
       "lang": [ "ccm.start", "./libs/lang/ccm.lang.js", {
         "translations": {
-          "de": [ "ccm.load", { "url": "./resources/resources.js#de", "type": "module" } ],
-          "en": [ "ccm.load", { "url": "./resources/resources.js#en", "type": "module" } ]
+          "de": [ "ccm.load", { "url": "./config.js#de", "type": "module" } ],
+          "en": [ "ccm.load", { "url": "./config.js#en", "type": "module" } ]
         }
       } ],
       "legend": true,
@@ -79,17 +79,17 @@
           "content": ""
         } ]
       },
-      "notations": [ "ccm.load", { "url": "./resources/resources.js#notations", "type": "module" } ],
+      "notations": [ "ccm.load", { "url": "./config.js#notations", "type": "module" } ],
 //    "number": 5,
 //    "onchange": event => console.log( event ),
       "onfinish": { "restart": true },
 //    "onready": event => console.log( event ),
 //    "onstart": event => console.log( event ),
-      "phrases": [ "ccm.load", { "url": "./resources/resources.js#phrases", "type": "module" } ],
+      "phrases": [ "ccm.load", { "url": "./config.js#phrases", "type": "module" } ],
       "show_solution": true,
       "shuffle": true,
       "skip": true,
-      "text": [ "ccm.load", { "url": "./resources/resources.js#de", "type": "module" } ],
+      "text": [ "ccm.load", { "url": "./config.js#de", "type": "module" } ],
 //    "user": [ "ccm.start", "./user/ccm.user.js" ]
     },
     Instance: function () {

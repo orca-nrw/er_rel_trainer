@@ -1,5 +1,5 @@
 /**
- * @overview Data-based resources of <i>ccmjs</i>-based web component for ER model to relational scheme training.
+ * @overview Configuration of <i>ccmjs</i>-based web component for ER model to relational scheme training.
  * @author André Kless <andre.kless@web.de> 2022
  * @license The MIT License (MIT)
  */
