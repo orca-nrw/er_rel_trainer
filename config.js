@@ -6,7 +6,7 @@
 
 /**
  * App configuration
- * @type {object}
+ * @type {app_config}
  */
 export const config = {
   "anytime_finish": true,               // Ein Neustart ist jederzeit und nicht erst am Ende möglich ("Neustart"-Button immer verfügbar).
@@ -21,7 +21,7 @@ export const config = {
   "retry": true,                        // Eine falsch beantwortete Phrase kann nachträglich korrigiert werden ("Korrigieren"-Button).
   "show_solution": true,                // Für eine falsch beantwortete Phrase kann eine Musterlösung aufgedeckt werden ("Zeige Lösung"-Button).
   "shuffle": true,                      // Phrasen mischen, sodass sie nicht immer in der gleichen Reihenfolge abgefragt werden.
-  "skip": true,                         // Eine Phrase kann Übersprungen werden ("Überspringen"-Button).
+  "skip": true,                         // Eine Phrase kann übersprungen werden ("Überspringen"-Button).
 
   // Die Ergebnisse werden offline-fähig lokal gespeichert und man kann dort weitermachen, wo man das letzte Mal aufgehört hat.
   "data": {
@@ -49,7 +49,7 @@ export const config = {
 
 /**
  * Phrases data
- * @type {object[]}
+ * @type {phrase_data[]}
  */
 export const phrases = [
   {
@@ -736,14 +736,14 @@ export const en = {
 
 /**
  * Notations data
- * @type {Object.<string,object>}
+ * @type {Object.<string,notation_data>}
  */
 export const notations = {
   "abrial": {
     "key": "abrial",
     "title": "Abrial",
     "centered": true,
-    "comment": "Die Abrial bzw. (min,max)-Notation gibt für jeden an einer Beziehung beteiligten Entitätstyp an, mit wie vielen Entitäten auf der anderen Seite eine Entität dieses Typs mindestens und höchstens in Beziehung steht."
+    "comment": "Die Abrial bzw. (min,max)-Notation gibt für jeden an einer Beziehung beteiligten Entitätentyp an, mit wie vielen Entitäten auf der anderen Seite eine Entität dieses Typs mindestens und höchstens in Beziehung steht."
   },
   "arrow": {
     "key": "arrow",
