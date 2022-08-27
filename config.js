@@ -5,8 +5,14 @@
  */
 
 /**
+ * Used app configuration
+ * @namespace AppConfig
+ */
+
+/**
  * App configuration
  * @type {app_config}
+ * @memberOf AppConfig
  */
 export const config = {
   "anytime_finish": true,               // Ein Neustart ist jederzeit und nicht erst am Ende möglich ("Neustart"-Button immer verfügbar).
@@ -50,6 +56,7 @@ export const config = {
 /**
  * Phrases data
  * @type {phrase_data[]}
+ * @memberOf AppConfig
  */
 export const phrases = [
   {
@@ -559,6 +566,7 @@ export const phrases = [
 /**
  * German translations
  * @type {Object.<string,string>}
+ * @memberOf AppConfig
  */
 export const de = {
 
@@ -648,6 +656,7 @@ export const de = {
 /**
  * English translations
  * @type {Object.<string,string>}
+ * @memberOf AppConfig
  */
 export const en = {
 
@@ -737,6 +746,7 @@ export const en = {
 /**
  * Notations data
  * @type {Object.<string,notation_data>}
+ * @memberOf AppConfig
  */
 export const notations = {
   "abrial": {
