@@ -3,7 +3,22 @@
  * ES6 module that exports useful help functions for <i>ccmjs</i> component developers.
  * @author André Kless <andre.kless@web.de> 2019-2022
  * @license The MIT License (MIT)
- * @version latest (8.2.0)
+ * @version latest (8.4.0)
+ * @changes
+ * version 8.4.0 (18.07.2022):
+ * - updated progressBar(obj):void
+ * version 8.3.0 (25.06.2022):
+ * - added isEqual(obj,obj):boolean by m0xai (https://github.com/ccmjs/ccm/pull/8)
+ * - added randomFromRange(obj,obj):number by m0xai (https://github.com/ccmjs/ccm/pull/7)
+ * version 8.2.0 (28.04.2022):
+ * - updated onFinish(obj,obj,obj):void - set 'unique' flag without 'user' flag for anonym result data
+ * version 8.1.1 (30.03.2022):
+ * - bugfix for fillForm(elem,obj):void - set no value on undefined instead of falsy
+ * version 8.1.0 (23.02.2022):
+ * - added appDependency(string):Array - converts the URL or the HTML embed code of an app to an app dependency
+ * version 8.0.0 (07.01.2022):
+ * - updated help functions for app handover
+ * (for older version changes see helper-7.10.0.mjs)
  */
 
 /**
@@ -197,6 +212,71 @@ export const hasDomContact = instance => document.contains( ccm.context.root( in
  * @memberOf ModuleHelper.Checker
  */
 export const hasParentContact = instance => instance.parent && instance.parent.element.contains( instance.root );
+
+/**
+ * Checks strictly if two items are equal.
+ * Their types are also matter. e.g: isEqual(23, "23") // returns false.
+ * @author m0xai (https://github.com/ccmjs/ccm/pull/8)
+ * @param  {*} obj1 The first item to compare.
+ * @param  {*} obj2 The second item to compare.
+ * @return {Boolean} Returns true if they're equal in value.
+ * @memberOf ModuleHelper.Checker
+ */
+export const isEqual = (obj1, obj2) => {
+  /**
+   * Check/Get the exact type of given JavaScript object.
+   * @param  {Object} item The given object, which type to find.
+   * @return {String}     The given object's exact type.
+   */
+  function getType (item) {
+    return Object.prototype.toString.call(item).slice(8, -1).toLowerCase(); // Gets the type of given item
+  }
+  function compareArrays () {
+    // Check first the length of two items
+    if (obj1.length !== obj2.length) return false;
+    // Check each item in the array one by one
+    for (let i = 0; i < obj1.length; i++) {
+      if (!isEqual(obj1[i], obj2[i])) return false;
+    }
+    // If no errors occurs, return true
+    return true;
+  }
+
+  function compareObjects() {
+    // Check the length of two objects
+    if (Object.keys(obj1).length !== Object.keys(obj2).length) return false;
+    // Check each item in the object one by one
+    for (let key in obj1) {
+      if (Object.prototype.hasOwnProperty.call(obj1, key)) {
+        if (!isEqual(obj1[key], obj2[key])) return false;
+      }
+    }
+    // If no errors occurs, return true
+    return true;
+  }
+
+  // Compare functions from their representing objects
+  function compareFunctions () {
+    return obj1.toString() === obj2.toString();
+  }
+
+  // Compare basic primitive type of elements
+  function comparePrimitives() {
+    return obj1 === obj2;
+  }
+
+  // Get the type of first argument
+  let type = getType(obj1);
+
+  // If the two items are not the same type, return false
+  if (type !== getType(obj2)) return false;
+
+  // Compare the two items based on their type
+  if (type === 'array') return compareArrays();
+  if (type === 'object') return compareObjects();
+  if (type === 'function') return compareFunctions();
+  return comparePrimitives();
+};
 
 /**
  * checks if current web browser is Firefox
@@ -420,6 +500,30 @@ export const params = ( values = {}, push, reset ) => {
     return Object.assign( acc, { [ k ]: decodeURIComponent( v ) } );
   }, {} );
 }
+
+/**
+ * Creates a random number from the given minimum and maximum number arguments.
+ * This function works also with negative numbers
+ * @author m0xai (https://github.com/ccmjs/ccm/pull/7)
+ * @param {Number} min Some number, which represents the minimum limit of the range
+ * @param {Number} max Some number, which represents the maximum limit of the range
+ * @returns {Number}
+ * @memberOf ModuleHelper.DataHandling
+ */
+const randomFromRange = (min, max) => {
+  if(isNaN(min)) throw new Error("Your min value " + min + " is actually not a number!" )
+  if(isNaN(max)) throw new Error("Your max value " + max + " is actually not a number!" )
+
+  // Find the difference between two numbers
+  if(max <= min) {
+    throw new Error("Your minimum number(" + min + ") is great than or equal to your maximum number (" + max + ").")
+  } else {
+    const differ = max - min; // Find the difference between numbers
+    const random = Math.floor(Math.random() * differ); // Create the random number from difference and Math library, and then floor their multiply.
+
+    return min + random; // Add random number to the minimum, in order to create a random number from the range.
+  }
+};
 
 /**
  * renames the property name of an object
@@ -1451,17 +1555,22 @@ export const loadScript = async url => new Promise( ( resolve, reject ) => {
 /**
  * appends a progress bar to a DOM element
  * @function
- * @param {Element} elem - progress bar will be appended to this element
- * @param {number} [actual = 0] - actual points
- * @param {number} [total = 100] - maximum points
- * @example progressBar( document.body, 60 )
- * @example progressBar( document.body, 40, 120 )
+ * @param {Element} obj.elem - progress bar will be appended to this element
+ * @param {number} [obj.actual = 0] - actual points
+ * @param {number} [obj.total = 100] - maximum points
+ * @param {number} [obj.color = '#4CAF50'] - progressbar success color
+ * @param {number} [obj.speed = 10] - animation speed
  * @memberOf ModuleHelper.Others
  */
-export const progressBar = ( elem, actual = 0, total = 100 ) => {
-
+export const progressBar = ( { elem, actual, total = 100, color = '#4CAF50', speed = 10 } ) => {
   const main = document.createElement( 'div' );
-  main.innerHTML = `<div>${actual}/${total}</div><div><div></div></div>`;
+  console.log( total );
+  main.innerHTML = `
+    <div>${ Number.isInteger( actual ) ? actual + ( total ? '/' + total : '' ) : '' }</div>
+    <div>
+      <div></div>
+    </div>
+  `;
   main.setAttribute( 'style', 'min-width: 200px; max-width: 90%; margin: 1em 5%; padding: 0.5em 1em; display: flex; align-items: center; border: 1px solid lightgray; border-radius: 20px;' );
   elem.appendChild( main );
 
@@ -1472,13 +1581,16 @@ export const progressBar = ( elem, actual = 0, total = 100 ) => {
   progress_bar.setAttribute( 'style', 'width: 100%; height: 20px; background-color: #ddd; border-radius: 10px; overflow: hidden; position: relative;' );
 
   const progress = progress_bar.querySelector( 'div' );
-  progress.setAttribute( 'style', 'width: 0%; height: 20px; background-color: #4CAF50; position: absolute;' );
+  progress.setAttribute( 'style', 'width: 0%; height: 20px; background-color:' + color + '; position: absolute;' );
 
-  setTimeout( () => {
-    const goal = actual * progress_bar.offsetWidth / total;
-    let width = 1;
-    let id = setInterval( () => width >= goal ? clearInterval( id ) : progress.style.width = ++width + 'px', 8 );
-  }, 8 );
+  if ( Number.isInteger( actual ) )
+    setTimeout( () => {
+      const goal = actual * progress_bar.offsetWidth / total;
+      let width = 1;
+      let id = setInterval( () => width >= goal ? clearInterval( id ) : progress.style.width = ( width += goal / 1000 * speed ) + 'px', 8 );
+    }, 1 );
+  else
+    progress.style.width = ( actual ? progress_bar.offsetWidth : 0 ) + 'px';
 
 };
 

@@ -5,7 +5,27 @@
  * and defines the Custom Element <code>\<ccm-app\></code>.
  * @author André Kless <andre.kless@web.de> 2014-2022
  * @license The MIT License (MIT)
- * @version latest (27.3.1)
+ * @version latest (27.4.0)
+ * @changes
+ * version 27.4.0 (17.06.2022)
+ * - ccm.helper.generateKey returns a Universally Unique Identifier (UUID)
+ * - better error handling when using IndexedDB
+ * version 27.3.1 (14.02.2022)
+ * - store.set() and store.del() returns original operation result
+ * version 27.3.0 (14.02.2022)
+ * - ccm.helper.html() accepts a instance reference and returns it as result
+ * version 27.2.0 (17.01.2022)
+ * - ccm.helper.isSubset() can check if a property not exists with value 'null'
+ * version 27.1.2 (27.12.2021)
+ * - highestByProperty() and nearestByProperty() returns null if there is no start instance
+ * version 27.1.1 (28.09.2021)
+ * - an instance created with ccm.start() is ready AFTER instance.start() is finished
+ * version 27.1.0 (27.09.2021)
+ * - added attribute 'ccm' for <ccm-app> to define used version of ccmjs (<ccm-app ccm="27.1.0" component="..." src="...">)
+ * version 27.0.0 (24.09.2021)
+ * - a source configuration is stored at property 'src' instead of 'key'
+ * - an instance configuration can have recursive source configurations
+ * (for older version changes see ccm-26.4.4.js)
  */
 
 ( () => {
@@ -70,27 +90,27 @@
         // data is not managed in IndexedDB? => abort
         if ( !that.name || that.url ) return;
 
-        // open database
-        await openDB();
-
-        // create object store
-        await createStore();
+        await openDB();       // open database
+        await createStore();  // create object store
 
         /**
          * opens ccm database if not already open
          * @returns {Promise}
          */
         function openDB() {
-
-          return new Promise( resolve => db ? resolve() : indexedDB.open( 'ccm' ).onsuccess = function () { db = this.result; resolve(); } );
-
+          return new Promise( ( resolve, reject ) => {
+            if ( db ) return resolve();
+            const idb = indexedDB.open( 'ccm' );
+            idb.onsuccess = function () { db = this.result; resolve(); }
+            idb.onerror = reject;
+          } );
         }
 
         /**
          * creates object store if not already exists
          * @returns {Promise}
          */
-        function createStore() { return new Promise( resolve => {
+        function createStore() { return new Promise( ( resolve, reject ) => {
 
           // object store already exists? => abort
           if ( db.objectStoreNames.contains( that.name ) ) return resolve();
@@ -127,6 +147,7 @@
 
           };
           request.onsuccess = resolve;
+          request.onerror = reject;
 
         } ); }
 
@@ -496,7 +517,7 @@
      * @description Returns the _ccmjs_ version.
      * @returns {ccm.types.version_nr}
      */
-    version: () => '27.3.1',
+    version: () => '27.4.0',
 
     /**
      * @summary loads resources
@@ -2040,7 +2061,7 @@
        */
       generateKey: function () {
 
-        return Date.now() + 'X' + Math.random().toString().substr( 2 );
+        return crypto.randomUUID();
 
       },
 
