@@ -22,6 +22,9 @@ An keiner Stelle werden Benutzer-spezifische Daten verarbeitet. Es handelt sich 
 ## Hintergrundinformationen
 Der ER-REL-Trainer wurde an der Hochschule Bonn-Rhein-Sieg im Rahmen des EILD-Projekts von André Kless entwickelt.
 
+## Code-Dokumentation
+Eine Code-Dokumentation für Entwickler findet sich unter https://eild-nrw.github.io/er_rel_trainer/docs/.
+
 ## Kontakt
 Wir freuen uns über jedes Feedback und beantworten gern Ihre Fragen. Hierfür können Sie sich jederzeit (auch nach dem Ende des EILD-Projekts) an den Entwickler André Kless wenden.
 
