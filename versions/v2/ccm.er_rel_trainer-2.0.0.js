@@ -46,7 +46,7 @@
   const component = {
     name: 'er_rel_trainer',
     version: [ 2, 0, 0 ],
-    ccm: 'https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/ccm.js',
+    ccm: 'https://eild-nrw.github.io/er_rel_trainer/libs/ccm/ccm.js',
     config: {
 //    "anytime_finish": true,
 //    "auto_arrows": true,
@@ -59,32 +59,32 @@
       "correction": true,
       "css": [ "ccm.load",
         [  // is loaded serially (not in parallel)
-          "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap.css",
-          "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/styles.css",
+          "https://eild-nrw.github.io/er_rel_trainer/libs/bootstrap-5/css/bootstrap.css",
+          "https://eild-nrw.github.io/er_rel_trainer/resources/styles.css",
         ],
-        { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap-fonts.css", "context": "head" }
+        { "url": "https://eild-nrw.github.io/er_rel_trainer/libs/bootstrap-5/css/bootstrap-fonts.css", "context": "head" }
       ],
 //    "data": { "store": [ "ccm.store" ] },
       "default": {
         "format": "svg",
         "images": [ "e", "1", "c", "n", "cn", "r", "s" ],
         "notation": "abrial",
-        "path": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/img/"
+        "path": "https://eild-nrw.github.io/er_rel_trainer/resources/img/"
       },
       "feedback": true,
 //    "fixed_notation": true,
-      "helper": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/helper.js", "type": "module" } ],
+      "helper": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/libs/ccm/helper.js", "type": "module" } ],
 //    "hide_own_fk": true,
-      "html": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/templates.js", "type": "module" } ],
-      "lang": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/lang/ccm.lang.js", {
+      "html": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/resources/templates.js", "type": "module" } ],
+      "lang": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/libs/lang/ccm.lang.js", {
         "translations": {
-          "de": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/configs.js#de", "type": "module" } ],
-          "en": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/configs.js#en", "type": "module" } ]
+          "de": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/configs.js#de", "type": "module" } ],
+          "en": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/configs.js#en", "type": "module" } ]
         }
       } ],
       "legend": true,
       "modal": {
-        "attr": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/ccm.modal.js", {
+        "attr": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/libs/modal/ccm.modal.js", {
           "backdrop_close": true,
           "breakpoints": false,
           "buttons": [],
@@ -92,31 +92,31 @@
           "content": "",
           "css": [ "ccm.load",
             [  // serial
-              "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap.css",
-              "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/modal.css"
+              "https://eild-nrw.github.io/er_rel_trainer/libs/bootstrap-5/css/bootstrap.css",
+              "https://eild-nrw.github.io/er_rel_trainer/resources/modal.css"
             ],
-            { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap-fonts.css", "context": "head" }
+            { "url": "https://eild-nrw.github.io/er_rel_trainer/libs/bootstrap-5/css/bootstrap-fonts.css", "context": "head" }
           ]
         } ],
-        "legend": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/ccm.modal.js", {
+        "legend": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/libs/modal/ccm.modal.js", {
           "backdrop_close": true,
           "buttons": "",
           "closed": true,
           "content": ""
         } ]
       },
-      "notations": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/configs.js#notations", "type": "module" } ],
+      "notations": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/configs.js#notations", "type": "module" } ],
 //    "number": 5,
 //    "onchange": event => console.log( event ),
       "onfinish": { "restart": true },
 //    "onready": event => console.log( event ),
 //    "onstart": event => console.log( event ),
-      "phrases": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/configs.js#phrases", "type": "module" } ],
+      "phrases": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/configs.js#phrases", "type": "module" } ],
       "show_solution": true,
       "shuffle": true,
       "skip": true,
-      "text": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/configs.js#de", "type": "module" } ],
-//    "user": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/user/ccm.user.js" ]
+      "text": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/configs.js#de", "type": "module" } ],
+//    "user": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/user/ccm.user.js" ]
     },
     /**
      * @class
