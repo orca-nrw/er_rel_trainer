@@ -29,7 +29,7 @@ Eine aus den Dokumentationskommentaren generierte Code-Dokumentation für Entwic
 <br><br>
 Der `libs`-Ordner enthält wiederverwendete Webkomponenten, Bibliotheken und Frameworks.
 <br>
-Der `versions`-Ordner enthält alles was nötig ist, um auch ältere Versionen weiter lauffähig zu halten und um die Anwendung auch in anderen Webseiten (mit absoluten Pfaden) flexibel einsetzen zu können.
+Der `versions`-Ordner enthält alles was nötig ist, um auch ältere Versionen weiter lauffähig zu halten und um die Anwendung auch in anderen Webseiten (mit absoluten statt relativen Pfaden) flexibel einsetzen zu können.
 
 ## Kontakt
 Wir freuen uns über jedes Feedback und beantworten gern Ihre Fragen. Hierfür können Sie sich jederzeit (auch nach dem Ende des EILD-Projekts) an den Entwickler André Kless wenden.
