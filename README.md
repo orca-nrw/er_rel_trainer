@@ -14,7 +14,7 @@ Alternativ kann das Repository als ZIP-Datei heruntergeladen, an beliebiger Stel
 Über die Web-URL ist die Webanwendung immer auf dem neusten Stand und muss nicht von Hand aktualisiert werden. Dafür hat man bei der ZIP-Variante den Vorteil einer von GitHub unabhängigen Version mit weitreichender individueller Anpassbarkeit.
 
 ## Anpassbarkeit
-Durch das Editieren der im Repository enthaltenen `config.js` können weitreichende individuelle Anpassungen vorgenommen werden.
+Durch das Editieren der im Repository enthaltenen `configs.js` können weitreichende individuelle Anpassungen vorgenommen werden.
 
 ## Datenverarbeitung
 An keiner Stelle werden Benutzer-spezifische Daten verarbeitet. Es handelt sich um reine Selbsttests mit direktem Feedback, was richtig/falsch beantwortet wurde.

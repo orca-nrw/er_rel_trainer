@@ -33,7 +33,21 @@
 			<li class="dropdown">
 				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
 				<ul class="dropdown-menu inline">
-					<li><a href="AppConfig.html">AppConfig</a></li><li><a href="HTMLTemplates.html">HTMLTemplates</a></li>
+					<li><a href="AppEvents.html">AppEvents</a></li><li><a href="WebComponent.html">WebComponent</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="module-AppConfig.html">AppConfig</a></li><li><a href="module-HTMLTemplates.html">HTMLTemplates</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="WebComponent.Instance.html">WebComponent.Instance</a></li>
 				</ul>
 			</li>
 			
@@ -78,7 +92,7 @@
     <article>
         <pre
             class="sunlight-highlight-javascript linenums">/**
- * @overview HTML templates of &lt;i>ccmjs&lt;/i>-based web component for ER model to relational scheme training.
+ * @overview HTML templates of &lt;i>ccmjs&lt;/i>-based web component for ER-REL Trainer.
  * @author André Kless &lt;andre.kless@web.de> 2021-2022
  */
 
@@ -86,17 +100,16 @@ import { html, render } from './../libs/lit/lit.js';
 export { render };
 
 /**
- * HTML templates of &lt;i>ccmjs&lt;/i>-based web component for ER model to relational scheme training.
- * @namespace HTMLTemplates
+ * HTML templates of &lt;i>ccmjs&lt;/i>-based web component for ER-REL Trainer.
+ * @module HTMLTemplates
  */
 
 /**
  * Returns the main HTML template.
  * @function
- * @param {object} app - App instance
- * @param {boolean} [show_solution] - Reveal main solution
+ * @param {object} app - App instance.
+ * @param {boolean} [show_solution] - Reveal main solution.
  * @returns {*}
- * @memberOf HTMLTemplates
  */
 export function main( app, show_solution ) {
 
@@ -1237,9 +1250,8 @@ export function main( app, show_solution ) {
 /**
  * Returns the HTML template of the legend table that shows the different notations in the ER diagram.
  * @function
- * @param {object} app - App instance
+ * @param {object} app - App instance.
  * @returns {*}
- * @memberOf HTMLTemplates
  */
 export function legend( app ) {
   const ids = [ '1', 'c', 'n', 'cn' ];
@@ -1266,10 +1278,9 @@ export function legend( app ) {
 /**
  * Returns the HTML template for the title of the table dialog.
  * @function
- * @param {object} app - App instance
- * @param {table_nr} table - Table number
+ * @param {object} app - App instance.
+ * @param {table_nr} table - Table number.
  * @returns {*}
- * @memberOf HTMLTemplates
  */
 export function tableDialogTitle( app, table ) {
   const data = app.getValue();
@@ -1282,10 +1293,9 @@ export function tableDialogTitle( app, table ) {
 /**
  * Returns the HTML template for the body of the table dialog.
  * @function
- * @param {object} app - App instance
- * @param {table_nr} table - Table number
+ * @param {object} app - App instance.
+ * @param {table_nr} table - Table number.
  * @returns {*}
- * @memberOf HTMLTemplates
  */
 export function tableDialogBody( app, table ) {
   const data = app.getValue();
@@ -1328,9 +1338,8 @@ export function tableDialogBody( app, table ) {
 /**
  * Returns the HTML template for the footer of the table dialog.
  * @function
- * @param {object} app - App instance
+ * @param {object} app - App instance.
  * @returns {*}
- * @memberOf HTMLTemplates
  */
 export function tableDialogFooter( app ) {
   return html`
@@ -1356,11 +1365,10 @@ export function tableDialogFooter( app ) {
  * Returns the name of a table.
  * @private
  * @function
- * @param {object} app - App instance
+ * @param {object} app - App instance.
  * @param {phrase_data} phrase - Phrase to which the table belongs.
- * @param {table_nr} table - Table number
+ * @param {table_nr} table - Table number.
  * @returns {string}
- * @memberOf HTMLTemplates
  */
 function getTableName( app, phrase, table ) {
   return table &amp;&amp; phrase.entities[ table - 1 ] || phrase.relation || app.text.hierarchy_is;
@@ -1370,11 +1378,10 @@ function getTableName( app, phrase, table ) {
  * Returns the name of a table attribute.
  * @private
  * @function
- * @param {object} app - App instance
+ * @param {object} app - App instance.
  * @param {phrase_data} phrase - Phrase to which the attribute belongs.
  * @param {table_nr} attr - Table that references the attribute as a foreign key.
  * @returns {string}
- * @memberOf HTMLTemplates
  */
 function getAttributeName( app, phrase, attr ) {
   const getRole = entity_nr => attr &amp;&amp; phrase.roles &amp;&amp; phrase.roles[ entity_nr - 1 ];
@@ -1389,7 +1396,6 @@ function getAttributeName( app, phrase, attr ) {
  * @function
  * @param {string} str
  * @returns {string}
- * @memberOf HTMLTemplates
  * @example
  * toID('Person') // => person_id
  */
@@ -1443,7 +1449,7 @@ function toID( str ) {
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a>
 	
-		on 2022-08-27T23:48:03+02:00
+		on 2022-08-29T09:07:56+02:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>

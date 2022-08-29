@@ -1,18 +1,17 @@
 /**
- * @overview Configuration of <i>ccmjs</i>-based web component for ER model to relational scheme training.
+ * @overview App configuration of <i>ccmjs</i>-based web component for ER-REL Trainer.
  * @author André Kless <andre.kless@web.de> 2022
  * @license The MIT License (MIT)
  */
 
 /**
- * Used app configuration
- * @namespace AppConfig
+ * Used app configuration of <i>ccmjs</i>-based web component for ER-REL Trainer.
+ * @module AppConfig
  */
 
 /**
- * App configuration
+ * Basic configurations.
  * @type {app_config}
- * @memberOf AppConfig
  */
 export const config = {
   "anytime_finish": true,               // Ein Neustart ist jederzeit und nicht erst am Ende möglich ("Neustart"-Button immer verfügbar).
@@ -54,9 +53,8 @@ export const config = {
 };
 
 /**
- * Phrases data
+ * Phrases data.
  * @type {phrase_data[]}
- * @memberOf AppConfig
  */
 export const phrases = [
   {
@@ -564,9 +562,50 @@ export const phrases = [
 ];
 
 /**
- * German translations
+ * Notations data.
+ * @type {Object.<string,notation_data>}
+ */
+export const notations = {
+  "abrial": {
+    "key": "abrial",
+    "title": "Abrial",
+    "centered": true,
+    "comment": "Die Abrial bzw. (min,max)-Notation gibt für jeden an einer Beziehung beteiligten Entitätentyp an, mit wie vielen Entitäten auf der anderen Seite eine Entität dieses Typs mindestens und höchstens in Beziehung steht."
+  },
+  "arrow": {
+    "key": "arrow",
+    "title": "Pfeilnotation",
+    "swap": true,
+    "mirrored": true
+  },
+  "chen": {
+    "key": "chen",
+    "title": "Chen",
+    "swap": true,
+    "centered": true,
+    "comment": "In der Chen-Notation sind nur einfache und mehrfache Beziehungstypen (1 und N) darstellbar, da die Beziehungsmengen bei Chen nur in ihrer Maximalaussage genannt werden. Bei Phrasen die auf einen bedingten oder mehrfach bedingten Beziehungstyp hindeuten, sollte besser zu einer anderen Notation gewechselt werden."
+  },
+  "crow": {
+    "key": "crow",
+    "title": "Krähenfuß",
+    "swap": true,
+    "mirrored": true
+  },
+  "mc": {
+    "key": "mc",
+    "swap": true,
+    "title": "MC"
+  },
+  "uml": {
+    "key": "uml",
+    "swap": true,
+    "title": "UML"
+  }
+};
+
+/**
+ * German translations.
  * @type {Object.<string,string>}
- * @memberOf AppConfig
  */
 export const de = {
 
@@ -654,9 +693,8 @@ export const de = {
 };
 
 /**
- * English translations
+ * English translations.
  * @type {Object.<string,string>}
- * @memberOf AppConfig
  */
 export const en = {
 
@@ -721,8 +759,8 @@ export const en = {
 
   /* Feedback */
   "feedback_correct": "Your answer was correct!",
-  "feedback_failed": "Ihre letzte Antwort war falsch!",
-  "feedback_solution": "Your last answer was wrong!",
+  "feedback_failed": "Your last answer was wrong!",
+  "feedback_solution": "Correct solution:",
 
   /* Generalisation/Specialisation Relation */
   "hierarchy_d": "disjoint",
@@ -741,47 +779,4 @@ export const en = {
   /* Table Dialog */
   "table_dialog_info": "Specify which attributes are part of which keys. Also decide for each attribute whether it is optional (NULL) or mandatory (NOT NULL)."
 
-};
-
-/**
- * Notations data
- * @type {Object.<string,notation_data>}
- * @memberOf AppConfig
- */
-export const notations = {
-  "abrial": {
-    "key": "abrial",
-    "title": "Abrial",
-    "centered": true,
-    "comment": "Die Abrial bzw. (min,max)-Notation gibt für jeden an einer Beziehung beteiligten Entitätentyp an, mit wie vielen Entitäten auf der anderen Seite eine Entität dieses Typs mindestens und höchstens in Beziehung steht."
-  },
-  "arrow": {
-    "key": "arrow",
-    "title": "Pfeilnotation",
-    "swap": true,
-    "mirrored": true
-  },
-  "chen": {
-    "key": "chen",
-    "title": "Chen",
-    "swap": true,
-    "centered": true,
-    "comment": "In der Chen-Notation sind nur einfache und mehrfache Beziehungstypen (1 und N) darstellbar, da die Beziehungsmengen bei Chen nur in ihrer Maximalaussage genannt werden. Bei Phrasen die auf einen bedingten oder mehrfach bedingten Beziehungstyp hindeuten, sollte besser zu einer anderen Notation gewechselt werden."
-  },
-  "crow": {
-    "key": "crow",
-    "title": "Krähenfuß",
-    "swap": true,
-    "mirrored": true
-  },
-  "mc": {
-    "key": "mc",
-    "swap": true,
-    "title": "MC"
-  },
-  "uml": {
-    "key": "uml",
-    "swap": true,
-    "title": "UML"
-  }
 };

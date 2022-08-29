@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>ER-REL Trainer Source: config.js</title>
+	<title>ER-REL Trainer Source: configs.js</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,7 +33,21 @@
 			<li class="dropdown">
 				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
 				<ul class="dropdown-menu inline">
-					<li><a href="AppConfig.html">AppConfig</a></li><li><a href="HTMLTemplates.html">HTMLTemplates</a></li>
+					<li><a href="AppEvents.html">AppEvents</a></li><li><a href="WebComponent.html">WebComponent</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="module-AppConfig.html">AppConfig</a></li><li><a href="module-HTMLTemplates.html">HTMLTemplates</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="WebComponent.Instance.html">WebComponent.Instance</a></li>
 				</ul>
 			</li>
 			
@@ -72,26 +86,25 @@
 		<div id="main">
 			
 
-		<h1 class="page-title">Source: config.js</h1>
+		<h1 class="page-title">Source: configs.js</h1>
     
 <section>
     <article>
         <pre
             class="sunlight-highlight-javascript linenums">/**
- * @overview Configuration of &lt;i>ccmjs&lt;/i>-based web component for ER model to relational scheme training.
+ * @overview App configuration of &lt;i>ccmjs&lt;/i>-based web component for ER-REL Trainer.
  * @author André Kless &lt;andre.kless@web.de> 2022
  * @license The MIT License (MIT)
  */
 
 /**
- * Used app configuration
- * @namespace AppConfig
+ * Used app configuration of &lt;i>ccmjs&lt;/i>-based web component for ER-REL Trainer.
+ * @module AppConfig
  */
 
 /**
- * App configuration
+ * Basic configurations.
  * @type {app_config}
- * @memberOf AppConfig
  */
 export const config = {
   "anytime_finish": true,               // Ein Neustart ist jederzeit und nicht erst am Ende möglich ("Neustart"-Button immer verfügbar).
@@ -133,9 +146,8 @@ export const config = {
 };
 
 /**
- * Phrases data
+ * Phrases data.
  * @type {phrase_data[]}
- * @memberOf AppConfig
  */
 export const phrases = [
   {
@@ -643,9 +655,50 @@ export const phrases = [
 ];
 
 /**
- * German translations
+ * Notations data.
+ * @type {Object.&lt;string,notation_data>}
+ */
+export const notations = {
+  "abrial": {
+    "key": "abrial",
+    "title": "Abrial",
+    "centered": true,
+    "comment": "Die Abrial bzw. (min,max)-Notation gibt für jeden an einer Beziehung beteiligten Entitätentyp an, mit wie vielen Entitäten auf der anderen Seite eine Entität dieses Typs mindestens und höchstens in Beziehung steht."
+  },
+  "arrow": {
+    "key": "arrow",
+    "title": "Pfeilnotation",
+    "swap": true,
+    "mirrored": true
+  },
+  "chen": {
+    "key": "chen",
+    "title": "Chen",
+    "swap": true,
+    "centered": true,
+    "comment": "In der Chen-Notation sind nur einfache und mehrfache Beziehungstypen (1 und N) darstellbar, da die Beziehungsmengen bei Chen nur in ihrer Maximalaussage genannt werden. Bei Phrasen die auf einen bedingten oder mehrfach bedingten Beziehungstyp hindeuten, sollte besser zu einer anderen Notation gewechselt werden."
+  },
+  "crow": {
+    "key": "crow",
+    "title": "Krähenfuß",
+    "swap": true,
+    "mirrored": true
+  },
+  "mc": {
+    "key": "mc",
+    "swap": true,
+    "title": "MC"
+  },
+  "uml": {
+    "key": "uml",
+    "swap": true,
+    "title": "UML"
+  }
+};
+
+/**
+ * German translations.
  * @type {Object.&lt;string,string>}
- * @memberOf AppConfig
  */
 export const de = {
 
@@ -733,9 +786,8 @@ export const de = {
 };
 
 /**
- * English translations
+ * English translations.
  * @type {Object.&lt;string,string>}
- * @memberOf AppConfig
  */
 export const en = {
 
@@ -800,8 +852,8 @@ export const en = {
 
   /* Feedback */
   "feedback_correct": "Your answer was correct!",
-  "feedback_failed": "Ihre letzte Antwort war falsch!",
-  "feedback_solution": "Your last answer was wrong!",
+  "feedback_failed": "Your last answer was wrong!",
+  "feedback_solution": "Correct solution:",
 
   /* Generalisation/Specialisation Relation */
   "hierarchy_d": "disjoint",
@@ -820,49 +872,6 @@ export const en = {
   /* Table Dialog */
   "table_dialog_info": "Specify which attributes are part of which keys. Also decide for each attribute whether it is optional (NULL) or mandatory (NOT NULL)."
 
-};
-
-/**
- * Notations data
- * @type {Object.&lt;string,notation_data>}
- * @memberOf AppConfig
- */
-export const notations = {
-  "abrial": {
-    "key": "abrial",
-    "title": "Abrial",
-    "centered": true,
-    "comment": "Die Abrial bzw. (min,max)-Notation gibt für jeden an einer Beziehung beteiligten Entitätentyp an, mit wie vielen Entitäten auf der anderen Seite eine Entität dieses Typs mindestens und höchstens in Beziehung steht."
-  },
-  "arrow": {
-    "key": "arrow",
-    "title": "Pfeilnotation",
-    "swap": true,
-    "mirrored": true
-  },
-  "chen": {
-    "key": "chen",
-    "title": "Chen",
-    "swap": true,
-    "centered": true,
-    "comment": "In der Chen-Notation sind nur einfache und mehrfache Beziehungstypen (1 und N) darstellbar, da die Beziehungsmengen bei Chen nur in ihrer Maximalaussage genannt werden. Bei Phrasen die auf einen bedingten oder mehrfach bedingten Beziehungstyp hindeuten, sollte besser zu einer anderen Notation gewechselt werden."
-  },
-  "crow": {
-    "key": "crow",
-    "title": "Krähenfuß",
-    "swap": true,
-    "mirrored": true
-  },
-  "mc": {
-    "key": "mc",
-    "swap": true,
-    "title": "MC"
-  },
-  "uml": {
-    "key": "uml",
-    "swap": true,
-    "title": "UML"
-  }
 };
 </pre>
     </article>
@@ -911,7 +920,7 @@ export const notations = {
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a>
 	
-		on 2022-08-27T23:48:03+02:00
+		on 2022-08-29T09:07:56+02:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>
