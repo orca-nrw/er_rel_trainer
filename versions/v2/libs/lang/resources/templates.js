@@ -3,7 +3,7 @@
  * @author André Kless <andre.kless@web.de> 2021
  */
 
-import { html, render } from 'https://eild-nrw.github.io/er_rel_trainer/versions/v2/lit/lit.js';
+import { html, render } from 'https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/lit/lit.js';
 export { render };
 
 /**
