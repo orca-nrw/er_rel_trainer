@@ -1,24 +1,27 @@
 # ER-REL-Trainer
 
 ## Beschreibung
-Mit dem ER-REL-Trainer wird die Überführung einer Beziehung zwischen zwei Entitäten eines ER-Diagramms in ein logisches relationales Schema trainiert. Es gilt die nötigen Tabellen anzulegen, die erforderlichen Schlüsselattribute zu ergänzen und die Richtung festzulegen, in der die Tabellen miteinander in Beziehung stehen.
+Mit dem ER-REL-Trainer wird, ausgehend von einer Phrase, die Überführung einer Beziehung zwischen Entitäten eines ER-Diagramms in ein logisches relationales Schema trainiert. Es gilt die nötigen Tabellen anzulegen, die erforderlichen Schlüsselattribute zu ergänzen und die Richtung festzulegen, in der die Tabellen miteinander in Beziehung stehen.
 
 ## Systemanforderungen
-Voraussetzung ist ein aktueller Webbrowser mit aktiviertem JavaScript.
+Voraussetzung ist ein gängiger Webbrowser (Firefox, Google Chrome, Microsoft Edge, Opera, Safari) mit aktiviertem JavaScript in einer aktuellen Version.
 
 ## Installation
-Die Webanwendung kann über GitHub Pages ohne Installation über die folgende Web-URL genutzt werden: https://eild-nrw.github.io/er_rel_trainer/.
+Die Webanwendung kann über GitHub Pages in ihrer Basiskonfiguration ohne Installation über die folgende Web-URL direkt genutzt werden: https://eild-nrw.github.io/er_rel_trainer/.
+Über die Web-URL ist die Webanwendung immer auf dem neusten Stand und muss nicht von Hand aktualisiert werden.
 
 Alternativ kann das Repository als ZIP-Datei heruntergeladen, an beliebiger Stelle entpackt und durch den Aufruf der enthaltenen `index.html` gestartet werden.
+Die ZIP-Variante hat den Vorteil einer von GitHub unabhängigen Version ohne externe Abhängigkeiten mit weitreichender individueller Anpassbarkeit.
+Bei der ZIP-Variante können nach dem Entpacken die Ordner `docs`, `scorm` und `versions` gelöscht werden, da sie keine Dateien enthalten, die für den lokalen Betrieb der App notwendig sind.
 
-Über die Web-URL ist die Webanwendung immer auf dem neusten Stand und muss nicht von Hand aktualisiert werden. Dafür hat man bei der ZIP-Variante den Vorteil einer von GitHub unabhängigen Version mit weitreichender individueller Anpassbarkeit.
+In einer Lernplattform (z.B. ILIAS oder Moodle) kann die App entweder über die Web-URL, über das Hochladen der ZIP-Datei oder über das im `scorm`-Ordner enthaltene "SCORM 1.2"-Modul integriert werden.
 
 ## Anpassbarkeit
 Durch das Editieren der im Repository enthaltenen `configs.js` können weitreichende individuelle Anpassungen vorgenommen werden.
 
 ## Datenverarbeitung
 In der unveränderten Basiskonfiguration werden an keiner Stelle Benutzer-spezifische Daten verarbeitet. Es handelt sich um reine Selbsttests mit direktem Feedback, was richtig/falsch beantwortet wurde. Es existieren keine Abhängigkeiten zu externen Servern und es findet entsprechend kein Datenaustausch mit anderen Servern statt.
-<br><br>
+
 Der Fortschritt kann, wenn gewünscht, offline-fähig lokal gespeichert werden, sodass man dort weitermachen kann, wo man das letzte Mal aufgehört hat. Dies kann bei Bedarf in der `configs.js` aktiviert werden.
 
 ## Hintergrundinformationen
@@ -26,9 +29,9 @@ Der ER-REL-Trainer wurde an der Hochschule Bonn-Rhein-Sieg im Rahmen des EILD-Pr
 
 ## Code-Dokumentation
 Eine aus den Dokumentationskommentaren generierte Code-Dokumentation für Entwickler findet sich unter https://eild-nrw.github.io/er_rel_trainer/docs/.
-<br><br>
+
 Der `libs`-Ordner enthält wiederverwendete Webkomponenten, Bibliotheken und Frameworks.
-<br>
+
 Der `versions`-Ordner enthält alles was nötig ist, um auch ältere Versionen weiter lauffähig zu halten und um die Anwendung auch in anderen Webseiten (mit absoluten statt relativen Pfaden) flexibel einsetzen zu können.
 
 ## Kontakt
