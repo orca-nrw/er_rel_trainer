@@ -240,7 +240,7 @@ export function main( app, show_solution ) {
     
     <!-- Logos -->
     <aside class="mx-3 mt-3 text-center">
-      <img src="./resources/img/logos.jpg">
+      <img src="./resources/img/logos/logos.jpg">
     </aside>
   `;
 

@@ -4,17 +4,20 @@
 Mit dem ER-REL-Trainer wird, ausgehend von einer Phrase, die Überführung einer Beziehung zwischen Entitäten eines ER-Diagramms in ein logisches relationales Schema trainiert. Es gilt die nötigen Tabellen anzulegen, die erforderlichen Schlüsselattribute zu ergänzen und die Richtung festzulegen, in der die Tabellen miteinander in Beziehung stehen.
 
 ## Systemanforderungen
-Voraussetzung ist ein gängiger Webbrowser (Firefox, Google Chrome, Microsoft Edge, Opera, Safari) mit aktiviertem JavaScript in einer aktuellen Version.
+Voraussetzung für die App ist ein gängiger Webbrowser (Firefox, Google Chrome, Microsoft Edge, Opera, Safari) mit aktiviertem JavaScript in einer aktuellen Version.
 
 ## Installation
 Die Webanwendung kann über GitHub Pages in ihrer Basiskonfiguration ohne Installation über die folgende Web-URL direkt genutzt werden: https://eild-nrw.github.io/er_rel_trainer/.
 Über die Web-URL ist die Webanwendung immer auf dem neusten Stand und muss nicht von Hand aktualisiert werden.
+Wird die Web-URL auf einem mobilen Gerät (Smartphone, Tablet) aufgerufen, kann die App von dort aus auf den Homescreen gelegt und anschließend wie eine native Mobile App genutzt werden.
 
 Alternativ kann das Repository als ZIP-Datei heruntergeladen, an beliebiger Stelle entpackt und durch den Aufruf der enthaltenen `index.html` gestartet werden.
 Die ZIP-Variante hat den Vorteil einer von GitHub unabhängigen Version ohne externe Abhängigkeiten mit weitreichender individueller Anpassbarkeit.
-Bei der ZIP-Variante können nach dem Entpacken die Ordner `docs`, `scorm` und `versions` gelöscht werden, da sie keine Dateien enthalten, die für den lokalen Betrieb der App notwendig sind.
+Bei der ZIP-Variante können nach dem Entpacken die Ordner `docs`, `scorm` und `versions` gelöscht werden, da sie keine Dateien enthalten, die für den Betrieb der App notwendig sind.
 
 In einer Lernplattform (z.B. ILIAS oder Moodle) kann die App entweder über die Web-URL, über das Hochladen der ZIP-Datei oder über das im `scorm`-Ordner enthaltene "SCORM 1.2"-Modul integriert werden.
+
+Alle genannten Varianten werden im folgenden Video kurz vorgeführt: .
 
 ## Anpassbarkeit
 Durch das Editieren der im Repository enthaltenen `configs.js` können weitreichende individuelle Anpassungen vorgenommen werden.
