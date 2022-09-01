@@ -12,6 +12,7 @@
  * - uses ccm.modal.js v3.2.0 as default
  * - default notation is 'abrial'
  * - updated default phrases
+ * - set optional logos via config
  * - added support for recursive binary relations
  * - added support for generalisation/specialisation
  * - added support for n-ary relations with up to 4 entities
