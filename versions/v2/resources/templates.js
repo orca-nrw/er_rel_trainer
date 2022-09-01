@@ -237,11 +237,13 @@ export function main( app, show_solution ) {
 
       </div>
     </main>
-    
+
     <!-- Logos -->
-    <aside class="mx-3 mt-3 text-center">
-      <img src="https://eild-nrw.github.io/er_rel_trainer/resources/img/logos/logos.jpg">
-    </aside>
+    ${ app.logos ? html`
+      <aside class="mx-3 mt-3 text-center">
+        <img src="${ app.logos }">
+      </aside>
+    ` : '' }
   `;
 
   /**

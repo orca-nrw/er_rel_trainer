@@ -239,9 +239,11 @@ export function main( app, show_solution ) {
     </main>
     
     <!-- Logos -->
-    <aside class="mx-3 mt-3 text-center">
-      <img src="./resources/img/logos/logos.jpg">
-    </aside>
+    ${ app.logos ? html`
+      <aside class="mx-3 mt-3 text-center">
+        <img src="${ app.logos }">
+      </aside>
+    ` : '' }
   `;
 
   /**

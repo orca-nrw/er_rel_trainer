@@ -21,6 +21,7 @@ export const config = {
   "fixed_notation": false,  // Es kann zwischen den Notationen umgeschaltet werden.
   "hide_own_fk": false,     // Das Hauptattribut einer Tabelle kann nicht als Fremdschlüssel markiert werden.
   "legend": true,           // Legende mit einer Übersicht aller ER-Diagramm-Notationen.
+  "logos": "./resources/img/logos/logos.jpg",  // Logos die unter der App dargestellt werden.
   "number": undefined,      // Anzahl der Phrasen, die abgefragt werden (standardmäßig werden alle Phrasen abgefragt).
   "retry": true,            // Eine falsch beantwortete Phrase kann nachträglich korrigiert werden ("Korrigieren"-Button).
   "show_solution": true,    // Für eine falsch beantwortete Phrase kann eine Musterlösung aufgedeckt werden ("Zeige Lösung"-Button).

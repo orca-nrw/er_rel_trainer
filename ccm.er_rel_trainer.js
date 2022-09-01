@@ -58,6 +58,7 @@
         }
       } ],
       "legend": true,
+//    "logos": "./resources/img/logos/logos.jpg",
       "modal": {
         "attr": [ "ccm.start", "./libs/modal/ccm.modal.js", {
           "backdrop_close": true,

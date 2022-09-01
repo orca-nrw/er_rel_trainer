@@ -6,7 +6,7 @@
  * @license The MIT License (MIT)
  * @version 2.0.0
  * @changes
- * version 2.0.0 (29.08.2022)
+ * version 2.0.0 (01.09.2022)
  * - uses ccmjs v27.4.0 as default
  * - uses helper.mjs v8.4.0 as default
  * - uses ccm.modal.js v3.2.0 as default
@@ -83,6 +83,7 @@
         }
       } ],
       "legend": true,
+//    "logos": "https://eild-nrw.github.io/er_rel_trainer/resources/img/logos/logos.jpg",
       "modal": {
         "attr": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/ccm.modal.js", {
           "backdrop_close": true,
