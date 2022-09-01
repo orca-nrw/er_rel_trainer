@@ -4,31 +4,7 @@
  * @overview <i>ccmjs</i>-based web component for ER-REL Trainer.
  * @author André Kless <andre.kless@web.de> 2022
  * @license The MIT License (MIT)
- * @version 2.0.0
- * @changes
- * version 2.0.0 (01.09.2022)
- * - uses ccmjs v27.4.0 as default
- * - uses helper.mjs v8.4.0 as default
- * - uses ccm.modal.js v3.2.0 as default
- * - default notation is 'abrial'
- * - updated default phrases
- * - set optional logos via config
- * - added support for recursive binary relations
- * - added support for generalisation/specialisation
- * - added support for n-ary relations with up to 4 entities
- * - added optional 'anytime_finish'
- * - added optional 'auto_arrows'
- * - added optional 'auto_pk'
- * - added optional 'fixed_notation'
- * - added optional 'hide_own_fk'
- * - added optional 'show_solution'
- * - added optional 'skip'
- * - added optional multilingualism
- * - added optional user authentication
- * - updated feedback comments
- * - feedback comments are separated in 3 groups and each group can be disabled
- * - removed optional logger
- * - updated callbacks in config
+ * @version latest (2.0.0)
  */
 
 ( () => {
@@ -45,7 +21,6 @@
    */
   const component = {
     name: 'er_rel_trainer',
-    version: [ 2, 0, 0 ],
     ccm: 'https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/ccm.js',
     config: {
 //    "anytime_finish": true,
