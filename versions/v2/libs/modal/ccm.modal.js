@@ -26,8 +26,8 @@
           "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/resources/styles.css"
         ]
       ],
-      "helper": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/helper.js", "type": "module" } ],
-      "html": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/resources/templates.js", "type": "module" } ],
+      "helper": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/helper.mjs" ],
+      "html": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/resources/templates.mjs" ],
 //    "onclose": instance => {},
       "title": "My Header"
     },

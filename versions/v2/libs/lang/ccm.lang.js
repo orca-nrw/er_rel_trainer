@@ -13,7 +13,7 @@
 //    "active": "en",
       "css": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/lang/resources/styles.css" ],
       "dark": false,
-      "html": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/lang/resources/templates.js", "type": "module" } ],
+      "html": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/lang/resources/templates.mjs" ],
       "languages": {
         "de": {
           "de": "Deutsch",

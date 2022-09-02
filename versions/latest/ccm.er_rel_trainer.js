@@ -48,13 +48,13 @@
       },
       "feedback": true,
 //    "fixed_notation": true,
-      "helper": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/helper.js", "type": "module" } ],
+      "helper": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/helper.mjs" ],
 //    "hide_own_fk": true,
-      "html": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/templates.js", "type": "module" } ],
+      "html": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/templates.mjs" ],
       "lang": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/lang/ccm.lang.js", {
         "translations": {
-          "de": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/configs.js#de", "type": "module" } ],
-          "en": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/configs.js#en", "type": "module" } ]
+          "de": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/configs.mjs#de" ],
+          "en": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/configs.mjs#en" ]
         }
       } ],
       "legend": true,
@@ -81,17 +81,17 @@
           "content": ""
         } ]
       },
-      "notations": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/configs.js#notations", "type": "module" } ],
+      "notations": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/configs.mjs#notations" ],
 //    "number": 5,
 //    "onchange": event => console.log( event ),
       "onfinish": { "restart": true },
 //    "onready": event => console.log( event ),
 //    "onstart": event => console.log( event ),
-      "phrases": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/configs.js#phrases", "type": "module" } ],
+      "phrases": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/configs.mjs#phrases" ],
       "show_solution": true,
       "shuffle": true,
       "skip": true,
-      "text": [ "ccm.load", { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/configs.js#de", "type": "module" } ],
+      "text": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/configs.mjs#de" ],
 //    "user": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/user/ccm.user.js" ]
     },
     /**
