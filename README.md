@@ -13,7 +13,7 @@ Wird die Web-URL auf einem mobilen Gerät (Smartphone, Tablet) aufgerufen, kann 
 
 Alternativ kann das Repository als ZIP-Datei heruntergeladen, auf einem beliebigen Webspace entpackt und durch den Aufruf der enthaltenen `index.html` gestartet werden.
 Die ZIP-Variante hat den Vorteil einer von GitHub unabhängigen Version ohne externe Abhängigkeiten mit weitreichender individueller Anpassbarkeit.
-Bei der ZIP-Variante können nach dem Entpacken die Ordner `docs`, `scorm` und `versions` gelöscht werden, da sie keine Dateien enthalten, die für den Betrieb der App notwendig sind.
+Bei der ZIP-Variante können nach dem Entpacken die Ordner `builder`, `docs`, `scorm` und `versions` gelöscht werden.
 
 In einer Lernplattform (z.B. ILIAS oder Moodle) kann die App entweder über die Web-URL, über das Hochladen der ZIP-Datei oder über das im `scorm`-Ordner enthaltene "SCORM 1.2"-Modul integriert werden.
 
