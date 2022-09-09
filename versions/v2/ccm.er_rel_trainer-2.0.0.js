@@ -83,7 +83,7 @@
         }
       } ],
       "legend": true,
-//    "logos": "https://eild-nrw.github.io/er_rel_trainer/resources/img/logos/logos.jpg",
+//    "logos": "https://eild-nrw.github.io/er_rel_trainer/resources/img/logos.jpg",
       "modal": {
         "attr": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/ccm.modal.js", {
           "backdrop_close": true,
