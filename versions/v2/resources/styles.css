@@ -81,14 +81,14 @@ aside {
 
 .line6 {
   border-bottom: 2px solid black;
-  width: 121px;
+  width: 113px;
   justify-self: end;
   align-self: end;
 }
 
 .line7 {
   border-bottom: 2px solid black;
-  width: 121px;
+  width: 113px;
   justify-self: start;
   align-self: end;
 }
