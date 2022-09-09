@@ -1,5 +1,5 @@
 /**
- * @overview App configuration of <i>ccmjs</i>-based web component for ER-REL Trainer.
+ * @overview Data-based resources of <i>ccmjs</i>-based web component for ER-REL Trainer.
  * @author André Kless <andre.kless@web.de> 2022
  * @license The MIT License (MIT)
  */
