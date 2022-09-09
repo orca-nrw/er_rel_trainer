@@ -32,7 +32,7 @@ aside {
 .entity {
   border: 2px solid black;
   border-radius: 5px;
-  width: 224px;
+  width: 240px;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -100,7 +100,7 @@ aside {
 
 #relation {
   position: relative;
-  width: 224px;
+  width: 240px;
 }
 
 #relation > div {
