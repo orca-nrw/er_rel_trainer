@@ -337,7 +337,7 @@ export function main( app, show_solution ) {
       if ( !nr ) return html`<div></div>`;
       if ( nr === 8 ) return html`
         <div class="line8">
-          <svg viewBox="0 0 240 60">
+          <svg viewBox="0 0 224 60">
             <line x1="0" y1="59" x2="90" y2="59" stroke="black" stroke-width="2"/>
             <line x1="90" y1="0" x2="90" y2="60" stroke="black" stroke-width="2"/>
             <line x1="120" y1="0" x2="120" y2="60" stroke="${ phrase.entities.length < 4 ? 'transparent' : 'black' }" stroke-width="2"/>
