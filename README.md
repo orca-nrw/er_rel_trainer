@@ -13,7 +13,7 @@ Wird die Web-URL auf einem mobilen Gerät (Smartphone, Tablet) aufgerufen, kann 
 
 Alternativ kann das Repository als ZIP-Datei heruntergeladen, auf einem beliebigen Webspace entpackt und durch den Aufruf der enthaltenen `index.html` gestartet werden.
 Die ZIP-Variante hat den Vorteil einer von GitHub unabhängigen Version ohne externe Abhängigkeiten mit weitreichender individueller Anpassbarkeit.
-Bei der ZIP-Variante können nach dem Entpacken die Ordner `docs`, `scorm` und `versions` gelöscht werden.
+Bei der ZIP-Variante können nach dem Entpacken die enthaltenen Ordner `docs`, `scorm` und `versions` gelöscht werden.
 
 In einer Lernplattform (z.B. ILIAS oder Moodle) kann die App entweder über die Web-URL, über das Hochladen der ZIP-Datei oder über das im `scorm`-Ordner enthaltene "SCORM 1.2"-Modul integriert werden.
 
@@ -23,10 +23,10 @@ Durch das Editieren der im Repository enthaltenen `configs.js` können weitreich
 ## Datenverarbeitung
 In der unveränderten Basiskonfiguration werden an keiner Stelle Benutzer-spezifische Daten verarbeitet. Es handelt sich um reine Selbsttests mit direktem Feedback, was richtig/falsch beantwortet wurde. Es existieren keine Abhängigkeiten zu externen Servern und es findet entsprechend kein Datenaustausch mit anderen Servern statt.
 
-Der Fortschritt kann, wenn gewünscht, offline-fähig lokal gespeichert werden, sodass man dort weitermachen kann, wo man das letzte Mal aufgehört hat. Dies kann bei Bedarf in der `configs.js` aktiviert werden.
+Der Fortschritt kann, wenn gewünscht, offline-fähig lokal gespeichert werden, sodass man bei der Phrase weitermachen kann, wo man das letzte Mal aufgehört hat. Dies kann bei Bedarf in der `configs.js` aktiviert werden.
 
 ## Hintergrundinformationen
-Der ER-REL-Trainer wurde an der Hochschule Bonn-Rhein-Sieg im Rahmen des EILD-Projekts von André Kless entwickelt.
+Der ER-REL-Trainer wurde an der Hochschule Bonn-Rhein-Sieg im Rahmen des EILD-Projekts von André Kless auf Basis von HTML, CSS und JavaScript in Form einer _ccmjs_-basierten Webkomponente im entwickelt.
 
 ## Code-Dokumentation
 Eine aus den Dokumentationskommentaren generierte Code-Dokumentation für Entwickler findet sich unter https://eild-nrw.github.io/er_rel_trainer/docs/.
