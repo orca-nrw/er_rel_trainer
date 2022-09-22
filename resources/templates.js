@@ -1195,7 +1195,7 @@ export function tableDialogTitle( app, table ) {
   const data = app.getValue();
   const phrase = data.phrases[ data.results.length - 1 ];
   return html`
-    <span data-lang='table'>${ app.text.table }</span>: ${ table && phrase.entities[ table - 1 ] || phrase.relation || app.text.hierarchy_is }
+    <span data-lang='main_table'>${ app.text.main_table }</span>: ${ table && phrase.entities[ table - 1 ] || phrase.relation || app.text.hierarchy_is }
   `;
 }
 
