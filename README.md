@@ -35,7 +35,7 @@ Der `libs`-Ordner enthält wiederverwendete Webkomponenten, Bibliotheken und Fra
 
 Der `versions`-Ordner enthält alles was nötig ist, um auch ältere Versionen weiter lauffähig zu halten und um die Anwendung auch in anderen Webseiten (mit absoluten statt relativen Pfaden) flexibel einsetzen zu können.
 
-# Lizenzen
+## Lizenzen
 Dieses Repository enthält Software und Content. Bei der Software handelt es sich um freie Software unter der MIT-Lizenz. Beim Content handelt es sich um gemeinfreie Inhalte unter der CC0-Lizenz. Content sind insbesondere die Phrasen in der Basiskonfiguration.
 
 ## Kontakt
