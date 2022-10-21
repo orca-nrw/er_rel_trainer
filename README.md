@@ -18,7 +18,7 @@ Bei der ZIP-Variante können nach dem Entpacken die enthaltenen Ordner `docs`, `
 In einer Lernplattform (z.B. ILIAS oder Moodle) kann die App entweder über die Web-URL, über das Hochladen der ZIP-Datei oder über das im `scorm`-Ordner enthaltene "SCORM 1.2"-Modul integriert werden.
 
 ## Anpassbarkeit
-Durch das Editieren der im Repository enthaltenen `configs.js` können weitreichende individuelle Anpassungen vorgenommen werden.
+Durch das Editieren der im Repository enthaltenen `configs.js` können weitreichende individuelle Anpassungen vorgenommen werden. Layout und Design können über die `resources/styles.css` angepasst werden. Die `resources/templates.js` enthält die HTML-Templates, in der bei Bedarf weitere HTML-ID's und HTML-Klassen ergänzt werden können, um das Selektieren von HTML-Elementen im CSS zu erleichtern. Wer über die nötigen Programmierkenntnisse verfügt, kann auch die Logik des interaktiven Trainers in der `ccm.er_rel_trainer.js` anpassen.
 
 ## Datenverarbeitung
 In der unveränderten Basiskonfiguration werden an keiner Stelle Benutzer-spezifische Daten verarbeitet. Es handelt sich um reine Selbsttests mit direktem Feedback, was richtig/falsch beantwortet wurde. Es existieren keine Abhängigkeiten zu externen Servern und es findet entsprechend kein Datenaustausch mit anderen Servern statt.
