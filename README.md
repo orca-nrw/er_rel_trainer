@@ -35,6 +35,9 @@ Der `libs`-Ordner enthält wiederverwendete Webkomponenten, Bibliotheken und Fra
 
 Der `versions`-Ordner enthält alles was nötig ist, um auch ältere Versionen weiter lauffähig zu halten und um die Anwendung auch in anderen Webseiten (mit absoluten statt relativen Pfaden) flexibel einsetzen zu können.
 
+# Lizenzen
+Dieses Repository enthält Software und Content. Bei der Software handelt es sich um freie Software unter der MIT-Lizenz. Beim Content handelt es sich um gemeinfreie Inhalte unter der CC0-Lizenz. Content sind insbesondere die Phrasen in der Basiskonfiguration.
+
 ## Kontakt
 Wir freuen uns über jedes Feedback und beantworten gern Ihre Fragen. Hierfür können Sie sich jederzeit (auch nach dem Ende des EILD-Projekts) an den Entwickler André Kless wenden.
 
