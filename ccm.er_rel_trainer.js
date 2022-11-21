@@ -4,6 +4,7 @@
  * @overview <i>ccmjs</i>-based web component for ER-REL Trainer.
  * @author André Kless <andre.kless@web.de> 2021-2022
  * @license The MIT License (MIT)
+ * @copyright EILD.nrw 2022
  * @version latest (2.0.0)
  */
 
