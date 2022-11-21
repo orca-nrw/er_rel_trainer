@@ -26,7 +26,7 @@ In der unveränderten Basiskonfiguration werden an keiner Stelle Benutzer-spezif
 Der Fortschritt kann, wenn gewünscht, offline-fähig lokal gespeichert werden, sodass man bei der Phrase weitermachen kann, wo man das letzte Mal aufgehört hat. Dies kann bei Bedarf in der `configs.js` aktiviert werden.
 
 ## Hintergrundinformationen
-Der ER-REL-Trainer wurde an der Hochschule Bonn-Rhein-Sieg im Rahmen des EILD-Projekts von André Kless auf Basis von HTML, CSS und JavaScript in Form einer _ccmjs_-basierten Webkomponente im entwickelt.
+Der ER-REL-Trainer wurde an der Hochschule Bonn-Rhein-Sieg im Rahmen des [EILD-Projekts](https://github.com/EILD-nrw) von André Kless auf Basis von HTML, CSS und JavaScript in Form einer _ccmjs_-basierten Webkomponente im entwickelt.
 
 ## Code-Dokumentation
 Eine aus den Dokumentationskommentaren generierte Code-Dokumentation für Entwickler findet sich unter https://eild-nrw.github.io/er_rel_trainer/docs/.
@@ -36,9 +36,11 @@ Der `libs`-Ordner enthält wiederverwendete Webkomponenten, Bibliotheken und Fra
 Der `versions`-Ordner enthält alles was nötig ist, um auch ältere Versionen weiter lauffähig zu halten und um die Anwendung auch in anderen Webseiten (mit absoluten statt relativen Pfaden) flexibel einsetzen zu können.
 
 ## Lizenzen
-Dieses Repository enthält Software und Content. Bei der Software handelt es sich um freie Software unter der MIT-Lizenz. Beim Content handelt es sich um gemeinfreie Inhalte unter der CC0-Lizenz. Content sind insbesondere die Phrasen in der Basiskonfiguration.
+Dieses Repository enthält Software und Content. Bei der Software handelt es sich um freie Software unter der [MIT-Lizenz](/README.md). Beim Content handelt es sich um gemeinfreie Inhalte unter der [CC0-Lizenz](https://creativecommons.org/publicdomain/zero/1.0/deed.de). Content sind insbesondere die Phrasen in der Basiskonfiguration.
 
 ## Kontakt
 Wir freuen uns über jedes Feedback und beantworten gern Ihre Fragen. Hierfür können Sie sich jederzeit (auch nach dem Ende des EILD-Projekts) an den Entwickler André Kless wenden.
 
 Email: andre.kless@h-brs.de | Web: https://www.h-brs.de/de/inf/andre-kless
+
+![Logos von Projekt, Kooperationspartner und Förderer](/resources/img/logos/logos.jpg)
