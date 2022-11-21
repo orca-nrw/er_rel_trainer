@@ -1,7 +1,8 @@
 # ER-REL-Trainer
 
 ## Beschreibung
-Mit dem ER-REL-Trainer wird, ausgehend von einer Phrase, die Überführung einer Beziehung zwischen Entitäten eines ER-Diagramms in ein logisches relationales Schema trainiert. Es gilt die nötigen Tabellen anzulegen, die erforderlichen Schlüsselattribute zu ergänzen und die Richtung festzulegen, in der die Tabellen miteinander in Beziehung stehen.
+Mit dem ER-REL-Trainer wird, ausgehend von einer Phrase, die Überführung einer Beziehung zwischen Entitäten eines ER-Diagramms in ein logisches relationales Schema trainiert.
+Es gilt die nötigen Tabellen anzulegen, die erforderlichen Schlüsselattribute zu ergänzen und die Richtung festzulegen, in der die Tabellen miteinander in Beziehung stehen.
 
 ## Systemanforderungen
 Voraussetzung für die App ist ein gängiger Webbrowser (Firefox, Google Chrome, Microsoft Edge, Opera, Safari) mit aktiviertem JavaScript in einer aktuellen Version.
