@@ -35,10 +35,6 @@ Es existieren keine Abhängigkeiten zu externen Servern und es findet entspreche
 Der Fortschritt kann, wenn gewünscht, offline-fähig lokal gespeichert werden, sodass man bei der Phrase weitermachen kann, wo man das letzte Mal aufgehört hat.
 Dies kann bei Bedarf in der `configs.js` aktiviert werden.
 
-## Hintergrundinformationen
-Der ER-REL-Trainer wurde an der Hochschule Bonn-Rhein-Sieg im Rahmen des [EILD-Projekts](https://github.com/EILD-nrw) von André Kless
-auf Basis von HTML, CSS und JavaScript in Form einer _ccmjs_-basierten Webkomponente im entwickelt.
-
 ## Code-Dokumentation
 Eine aus den Dokumentationskommentaren generierte Code-Dokumentation für Entwickler findet sich unter https://eild-nrw.github.io/er_rel_trainer/docs/.
 
@@ -51,6 +47,10 @@ Dieses Repository enthält Software und Content.
 Bei der Software handelt es sich um freie Software unter der [MIT-Lizenz](/LICENSE).
 Beim Content handelt es sich um gemeinfreie Inhalte unter der [CC0-Lizenz](https://creativecommons.org/publicdomain/zero/1.0/deed.de).
 Content sind insbesondere die Phrasen in der Basiskonfiguration.
+
+## Hintergrundinformationen
+Der ER-REL-Trainer wurde an der Hochschule Bonn-Rhein-Sieg im Rahmen des [EILD-Projekts](https://github.com/EILD-nrw) von André Kless
+auf Basis von HTML, CSS und JavaScript in Form einer _ccmjs_-basierten Webkomponente im entwickelt.
 
 ## Kontakt
 Wir freuen uns über jedes Feedback und beantworten gern Ihre Fragen.
