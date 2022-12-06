@@ -248,9 +248,9 @@ export function main( app, show_solution ) {
         von <a href="https://h-brs.de/de/inf/andre-kless" target="_blank">André Kless</a> im Rahmen
         des <a href="https://github.com/EILD-nrw" target="_blank">EILD-Projekts</a> an
         der <a href="https://h-brs.de" target="_blank">Hochschule Bonn-Rhein-Sieg</a> entwickelt.
-        Dieser Online-Trainer enthält Software und Content.
-        Bei der Software handelt es sich um freie Software unter der <a href="https://opensource.org/licenses/MIT" target="_blank">MIT-Lizenz</a>.
-        Beim Content handelt es sich um gemeinfreie Inhalte unter der <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank">CC0-Lizenz</a>.
+        Dieser interaktive Trainer enthält Software unter <a href="https://opensource.org/licenses/MIT" target="_blank">MIT-Lizenz</a> und Content
+        unter der <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank">CC0-Lizenz</a>.
+        Content sind insbesondere die Phrasen.
       </aside>
     ` : '' }
 
