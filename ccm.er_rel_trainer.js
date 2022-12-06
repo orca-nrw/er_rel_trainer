@@ -1,11 +1,10 @@
-'use strict';
+"use strict";
 
 /**
  * @overview <i>ccmjs</i>-based web component for ER-REL Trainer.
- * @author André Kless <andre.kless@web.de> 2021-2022
- * @license The MIT License (MIT)
+ * @author André Kless <andre.kless@h-brs.de> 2022
  * @copyright EILD.nrw 2022
- * @version latest (2.0.0)
+ * @license The MIT License (MIT)
  */
 
 ( () => {
@@ -59,7 +58,8 @@
         }
       } ],
       "legend": true,
-//    "logos": "./resources/img/logos/logos.jpg",
+      "license": true,
+      "logos": "./resources/img/logos/logos.jpg",
       "modal": {
         "attr": [ "ccm.start", "./libs/modal/ccm.modal.js", {
           "backdrop_close": true,
@@ -676,6 +676,8 @@
  * @prop {array} html - HTML template dependencies.
  * @prop {array} [lang] - Dependency on component for multilingualism.
  * @prop {boolean} [legend] - Button to display a legend for the different notations in the ER diagram.
+ * @prop {boolean} [license] - Show license information in the bottom of the app.
+ * @prop {string} [logos] - Show image of logos in the bottom of the app.
  * @prop {object} modal - Dependencies on component instances for modal dialogs.
  * @prop {array} modal.attr - Modal dialog for editing attributes of a table.
  * @prop {array} [modal.legend] - Modal dialog to display a legend for the different notations in the ER diagram.

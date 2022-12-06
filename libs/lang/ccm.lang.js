@@ -1,6 +1,6 @@
 /**
  * @overview ccmjs-based web component for multilingualism
- * @author André Kless <andre.kless@web.de> 2021-2022
+ * @author André Kless <andre.kless@h-brs.de> 2021-2022
  * @license The MIT License (MIT)
  * @version latest (1.1.0)
  */

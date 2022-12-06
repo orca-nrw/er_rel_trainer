@@ -1,8 +1,9 @@
-'use strict';
+"use strict";
 
 /**
  * @overview <i>ccmjs</i>-based web component for ER-REL Trainer.
- * @author André Kless <andre.kless@web.de> 2022
+ * @author André Kless <andre.kless@h-brs.de> 2022
+ * @copyright EILD.nrw 2022
  * @license The MIT License (MIT)
  * @version latest (2.0.0)
  */
@@ -21,7 +22,7 @@
    */
   const component = {
     name: 'er_rel_trainer',
-    ccm: 'https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/ccm.js',
+    ccm: 'https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/ccm/ccm.js',
     config: {
 //    "anytime_finish": true,
 //    "auto_arrows": true,
@@ -34,33 +35,34 @@
       "correction": true,
       "css": [ "ccm.load",
         [  // is loaded serially (not in parallel)
-          "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap.css",
-          "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/styles.css",
+          "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/bootstrap-5/css/bootstrap.css",
+          "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources/styles.css",
         ],
-        { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap-fonts.css", "context": "head" }
+        { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/bootstrap-5/css/bootstrap-fonts.css", "context": "head" }
       ],
 //    "data": { "store": [ "ccm.store" ] },
       "default": {
         "format": "svg",
         "images": [ "e", "1", "c", "n", "cn", "r", "s" ],
         "notation": "abrial",
-        "path": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/img/"
+        "path": "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources/img/"
       },
       "feedback": true,
 //    "fixed_notation": true,
-      "helper": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/helper.mjs" ],
+      "helper": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/ccm/helper.mjs" ],
 //    "hide_own_fk": true,
-      "html": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/templates.mjs" ],
-      "lang": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/lang/ccm.lang.js", {
+      "html": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources/templates.mjs" ],
+      "lang": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/lang/ccm.lang.js", {
         "translations": {
-          "de": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.mjs#de" ],
-          "en": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.mjs#en" ]
+          "de": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources.mjs#de" ],
+          "en": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources.mjs#en" ]
         }
       } ],
       "legend": true,
-//    "logos": "https://eild-nrw.github.io/er_rel_trainer/resources/img/logos.jpg",
+      "license": true,
+      "logos": "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources/img/logos/logos.jpg",
       "modal": {
-        "attr": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/ccm.modal.js", {
+        "attr": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/modal/ccm.modal.js", {
           "backdrop_close": true,
           "breakpoints": false,
           "buttons": [],
@@ -68,31 +70,31 @@
           "content": "",
           "css": [ "ccm.load",
             [  // serial
-              "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap.css",
-              "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/modal.css"
+              "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/bootstrap-5/css/bootstrap.css",
+              "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources/modal.css"
             ],
-            { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap-fonts.css", "context": "head" }
+            { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/bootstrap-5/css/bootstrap-fonts.css", "context": "head" }
           ]
         } ],
-        "legend": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/ccm.modal.js", {
+        "legend": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/modal/ccm.modal.js", {
           "backdrop_close": true,
           "buttons": "",
           "closed": true,
           "content": ""
         } ]
       },
-      "notations": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.mjs#notations" ],
+      "notations": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources.mjs#notations" ],
 //    "number": 5,
 //    "onchange": event => console.log( event ),
       "onfinish": { "restart": true },
 //    "onready": event => console.log( event ),
 //    "onstart": event => console.log( event ),
-      "phrases": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.mjs#phrases" ],
+      "phrases": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources.mjs#phrases" ],
       "show_solution": true,
       "shuffle": true,
       "skip": true,
-      "text": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.mjs#de" ],
-//    "user": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/user/ccm.user.js" ]
+      "text": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources.mjs#de" ],
+//    "user": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/user/ccm.user.js" ]
     },
     /**
      * @class
@@ -675,6 +677,8 @@
  * @prop {array} html - HTML template dependencies.
  * @prop {array} [lang] - Dependency on component for multilingualism.
  * @prop {boolean} [legend] - Button to display a legend for the different notations in the ER diagram.
+ * @prop {boolean} [license] - Show license information in the bottom of the app.
+ * @prop {string} [logos] - Show image of logos in the bottom of the app.
  * @prop {object} modal - Dependencies on component instances for modal dialogs.
  * @prop {array} modal.attr - Modal dialog for editing attributes of a table.
  * @prop {array} [modal.legend] - Modal dialog to display a legend for the different notations in the ER diagram.

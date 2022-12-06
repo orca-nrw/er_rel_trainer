@@ -1,6 +1,6 @@
 /**
  * @overview HTML templates of ccmjs-based web component for multilingualism
- * @author André Kless <andre.kless@web.de> 2021
+ * @author André Kless <andre.kless@h-brs.de> 2021
  */
 
 import { html, render } from 'https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/lit/lit.js';

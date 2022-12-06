@@ -1,8 +1,9 @@
-'use strict';
+"use strict";
 
 /**
  * @overview <i>ccmjs</i>-based web component for ER-REL Trainer.
- * @author André Kless <andre.kless@web.de> 2022
+ * @author André Kless <andre.kless@h-brs.de> 2022
+ * @copyright EILD.nrw 2022
  * @license The MIT License (MIT)
  * @version 2.0.0
  * @changes
@@ -12,6 +13,7 @@
  * - uses ccm.modal.js v3.2.0 as default
  * - default notation is 'abrial'
  * - updated default phrases
+ * - set show of optional license information's via config
  * - set optional logos via config
  * - added support for recursive binary relations
  * - added support for generalisation/specialisation
@@ -83,7 +85,8 @@
         }
       } ],
       "legend": true,
-//    "logos": "https://eild-nrw.github.io/er_rel_trainer/resources/img/logos.jpg",
+      "license": true,
+      "logos": "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources/img/logos/logos.jpg",
       "modal": {
         "attr": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/ccm.modal.js", {
           "backdrop_close": true,
@@ -700,6 +703,8 @@
  * @prop {array} html - HTML template dependencies.
  * @prop {array} [lang] - Dependency on component for multilingualism.
  * @prop {boolean} [legend] - Button to display a legend for the different notations in the ER diagram.
+ * @prop {boolean} [license] - Show license information in the bottom of the app.
+ * @prop {string} [logos] - Show image of logos in the bottom of the app.
  * @prop {object} modal - Dependencies on component instances for modal dialogs.
  * @prop {array} modal.attr - Modal dialog for editing attributes of a table.
  * @prop {array} [modal.legend] - Modal dialog to display a legend for the different notations in the ER diagram.

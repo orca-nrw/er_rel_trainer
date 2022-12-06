@@ -1,6 +1,7 @@
 /**
  * @overview App configuration of <i>ccmjs</i>-based web component for ER-REL Trainer.
- * @author André Kless <andre.kless@web.de> 2022
+ * @author André Kless <andre.kless@h-brs.de> 2022
+ * @copyright EILD.nrw 2022
  * @license The MIT License (MIT)
  */
 
@@ -21,6 +22,7 @@ export const config = {
   "fixed_notation": false,  // Es kann zwischen den Notationen umgeschaltet werden.
   "hide_own_fk": false,     // Das Hauptattribut einer Tabelle kann nicht als Fremdschlüssel markiert werden.
   "legend": true,           // Legende mit einer Übersicht aller ER-Diagramm-Notationen.
+  "license": true,          // Lizenzhinweise die unter der App dargestellt werden.
   "logos": "./resources/img/logos/logos.jpg",  // Logos die unter der App dargestellt werden.
   "number": undefined,      // Anzahl der Phrasen, die abgefragt werden (standardmäßig werden alle Phrasen abgefragt).
   "retry": true,            // Eine falsch beantwortete Phrase kann nachträglich korrigiert werden ("Korrigieren"-Button).

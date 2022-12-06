@@ -44,14 +44,13 @@ Der `libs`-Ordner enthält wiederverwendete Webkomponenten, Bibliotheken und Fra
 Der `versions`-Ordner enthält alles was nötig ist, um auch ältere Versionen weiter lauffähig zu halten und um die Anwendung auch in anderen Webseiten (mit absoluten statt relativen Pfaden) flexibel einsetzen zu können.
 
 ## Lizenzen
-Dieses Repository enthält Software und Content.
-Bei der Software handelt es sich um freie Software unter der [MIT-Lizenz](/LICENSE).
-Beim Content handelt es sich um gemeinfreie Inhalte unter der [CC0-Lizenz](https://creativecommons.org/publicdomain/zero/1.0/deed.de).
+Der [ER-REL-Trainer](https://github.com/EILD-nrw/er_rel_trainer) wurde
+von [André Kless](https://h-brs.de/de/inf/andre-kless) im Rahmen
+des [EILD-Projekts](https://github.com/EILD-nrw) an
+der [Hochschule Bonn-Rhein-Sieg](https://h-brs.de) entwickelt.
+Dieses Repository enthält Software unter [MIT-Lizenz](/LICENSE) und Content
+unter [CC0-Lizenz](https://creativecommons.org/publicdomain/zero/1.0/deed.de).
 Content sind insbesondere die Phrasen in der Basiskonfiguration.
-
-## Hintergrundinformationen
-Der ER-REL-Trainer wurde an der Hochschule Bonn-Rhein-Sieg im Rahmen des [EILD-Projekts](https://github.com/EILD-nrw) von André Kless
-auf Basis von HTML, CSS und JavaScript in Form einer _ccmjs_-basierten Webkomponente im entwickelt.
 
 ## Kontakt
 Wir freuen uns über jedes Feedback und beantworten gern Ihre Fragen.

@@ -1,7 +1,7 @@
 /**
  * @overview
  * ES6 module that exports useful help functions for <i>ccmjs</i> component developers.
- * @author André Kless <andre.kless@web.de> 2019-2022
+ * @author André Kless <andre.kless@h-brs.de> 2019-2022
  * @license The MIT License (MIT)
  * @version latest (8.4.0)
  * @changes

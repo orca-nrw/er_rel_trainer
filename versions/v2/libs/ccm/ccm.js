@@ -3,7 +3,7 @@
  * Core script of _ccmjs_ that is automatically loaded as soon as a component is integrated into a webpage.
  * The core script sets an object in the namespace [window.ccm]{@link ccm} that represents the loaded _ccmjs_ version
  * and defines the Custom Element <code>\<ccm-app\></code>.
- * @author André Kless <andre.kless@web.de> 2014-2022
+ * @author André Kless <andre.kless@h-brs.de> 2014-2022
  * @license The MIT License (MIT)
  * @version latest (27.4.0)
  * @changes

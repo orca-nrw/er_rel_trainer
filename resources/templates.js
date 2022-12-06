@@ -1,6 +1,8 @@
 /**
  * @overview HTML templates of <i>ccmjs</i>-based web component for ER-REL Trainer.
- * @author André Kless <andre.kless@web.de> 2021-2022
+ * @author André Kless <andre.kless@h-brs.de> 2022
+ * @copyright EILD.nrw 2022
+ * @license The MIT License (MIT)
  */
 
 import { html, render } from './../libs/lit/lit.js';
@@ -237,13 +239,27 @@ export function main( app, show_solution ) {
 
       </div>
     </main>
-    
-    <!-- Logos -->
-    ${ app.logos ? html`
-      <aside class="mx-3 mt-3 text-center">
-        <img src="${ app.logos }">
+
+    <!-- Lizenzen -->
+    ${ app.license ? html`
+      <aside class="bg-light rounded text-center form-text mt-4 mx-3">
+        Der <a href="https://github.com/EILD-nrw/er_rel_trainer" target="_blank">ER-REL-Trainer</a> wurde
+        von <a href="https://h-brs.de/de/inf/andre-kless" target="_blank">André Kless</a> im Rahmen
+        des <a href="https://github.com/EILD-nrw" target="_blank">EILD-Projekts</a> an
+        der <a href="https://h-brs.de" target="_blank">Hochschule Bonn-Rhein-Sieg</a> entwickelt.
+        Dieser Online-Trainer enthält Software und Content.
+        Bei der Software handelt es sich um freie Software unter der <a href="https://opensource.org/licenses/MIT" target="_blank">MIT-Lizenz</a>.
+        Beim Content handelt es sich um gemeinfreie Inhalte unter der <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank">CC0-Lizenz</a>.
       </aside>
     ` : '' }
+
+    <!-- Logos -->
+    ${ app.logos ? html`
+    <aside class="mx-3 mt-3 text-center">
+      <img src="${ app.logos }">
+    </aside>
+  ` : '' }
+
   `;
 
   /**
