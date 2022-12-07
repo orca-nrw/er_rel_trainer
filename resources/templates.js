@@ -249,7 +249,6 @@ export function main( app, show_solution ) {
         der <a href="https://h-brs.de" target="_blank">Hochschule Bonn-Rhein-Sieg</a> entwickelt.
         Dieser interaktive Trainer enthält Software unter <a href="https://opensource.org/licenses/MIT" target="_blank">MIT-Lizenz</a> und Content
         unter der <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank">CC0-Lizenz</a>.
-        Content sind insbesondere die Phrasen.
       </aside>
     ` : '' }
 

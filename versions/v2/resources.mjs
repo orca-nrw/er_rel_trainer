@@ -7,11 +7,6 @@
  */
 
 /**
- * Used app configuration of <i>ccmjs</i>-based web component for ER-REL Trainer.
- * @module AppConfig
- */
-
-/**
  * Phrases data.
  * @type {phrase_data[]}
  */
