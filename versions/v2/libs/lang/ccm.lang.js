@@ -11,7 +11,7 @@
     ccm: 'https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/ccm.min.js',
     config: {
 //    "active": "en",
-      "css": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/lang/resources/styles.css" ],
+      "css": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/lang/resources/styles.min.css" ],
       "dark": false,
       "html": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/lang/resources/templates.min.mjs" ],
       "languages": {
