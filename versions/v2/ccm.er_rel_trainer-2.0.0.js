@@ -75,13 +75,13 @@
       },
       "feedback": true,
 //    "fixed_notation": true,
-      "helper": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/helper.mjs" ],
+      "helper": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/helper.min.mjs" ],
 //    "hide_own_fk": true,
-      "html": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/templates.mjs" ],
+      "html": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/templates.min.mjs" ],
       "lang": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/lang/ccm.lang.min.js", {
         "translations": {
-          "de": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.mjs#de" ],
-          "en": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.mjs#en" ]
+          "de": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.min.mjs#de" ],
+          "en": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.min.mjs#en" ]
         }
       } ],
       "legend": true,
@@ -109,17 +109,17 @@
           "content": ""
         } ]
       },
-      "notations": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.mjs#notations" ],
+      "notations": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.min.mjs#notations" ],
 //    "number": 5,
 //    "onchange": event => console.log( event ),
       "onfinish": { "restart": true },
 //    "onready": event => console.log( event ),
 //    "onstart": event => console.log( event ),
-      "phrases": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.mjs#phrases" ],
+      "phrases": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.min.mjs#phrases" ],
       "show_solution": true,
       "shuffle": true,
       "skip": true,
-      "text": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.mjs#de" ],
+      "text": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.min.mjs#de" ],
 //    "user": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/user/ccm.user.min.js" ]
     },
     /**

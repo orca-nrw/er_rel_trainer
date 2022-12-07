@@ -24,7 +24,7 @@ ccm.files[ 'resources.js' ] = {
     "store": "dms-user",
     "url": "https://ccm2.inf.h-brs.de",
     "title": "Please enter Username and Password",
-    "hash": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/md5/md5.mjs" ]
+    "hash": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/md5/md5.min.mjs" ]
   },
 
   /** configuration for login with a Hochschule Bonn-Rhein-Sieg FB02 Computer Science account */
