@@ -61,10 +61,10 @@
       "correction": true,
       "css": [ "ccm.load",
         [  // is loaded serially (not in parallel)
-          "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap.css",
-          "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/styles.css",
+          "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap.min.css",
+          "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/styles.min.css",
         ],
-        { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap-fonts.css", "context": "head" }
+        { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap-fonts.min.css", "context": "head" }
       ],
 //    "data": { "store": [ "ccm.store" ] },
       "default": {
@@ -96,10 +96,10 @@
           "content": "",
           "css": [ "ccm.load",
             [  // serial
-              "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap.css",
-              "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/modal.css"
+              "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap.min.css",
+              "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/modal.min.css"
             ],
-            { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap-fonts.css", "context": "head" }
+            { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap-fonts.min.css", "context": "head" }
           ]
         } ],
         "legend": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/ccm.modal.min.js", {
