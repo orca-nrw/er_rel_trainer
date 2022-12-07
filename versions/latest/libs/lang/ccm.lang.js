@@ -8,7 +8,7 @@
 ( () => {
   const component = {
     name: 'lang',
-    ccm: 'https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/ccm/ccm.js',
+    ccm: 'https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/ccm/ccm.min.js',
     config: {
 //    "active": "en",
       "css": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/lang/resources/styles.css" ],

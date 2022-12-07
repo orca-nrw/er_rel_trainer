@@ -9,7 +9,7 @@
 
   const component = {
     name: 'user',
-    ccm: 'https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/ccm/ccm.js',
+    ccm: 'https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/ccm/ccm.min.js',
     config: {
       "css": [ "ccm.load",
         [  // serial
@@ -20,9 +20,9 @@
 //    "guest": "guest",
 //    "hash": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/md5/md5.mjs" ],
       "helper": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/ccm/helper.mjs" ],
-      "html": [ "ccm.get", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/user/resources/resources.js", "html" ],
+      "html": [ "ccm.get", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/user/resources/resources.min.js", "html" ],
 //    "logged_in": true,
-//    "logger": [ "ccm.instance", "https://ccmjs.github.io/akless-components/log/versions/ccm.log-5.0.0.js", [ "ccm.get", "https://ccmjs.github.io/akless-components/log/resources/configs.js", "greedy" ] ],
+//    "logger": [ "ccm.instance", "https://ccmjs.github.io/akless-components/log/versions/ccm.log-5.0.0.min.js", [ "ccm.get", "https://ccmjs.github.io/akless-components/log/resources/configs.min.js", "greedy" ] ],
 //    "map": user => user.user === 'john' ? 'Teacher' : 'Student',
 //    "norender": true,
 //    "onchange": event => console.log( 'User has logged ' + ( event ? 'in' : 'out' ) + '.' ),

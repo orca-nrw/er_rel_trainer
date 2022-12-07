@@ -9,7 +9,7 @@
 ( () => {
   const component = {
     name: 'modal',
-    ccm: 'https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/ccm/ccm.js',
+    ccm: 'https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/ccm/ccm.min.js',
     config: {
 //    "backdrop_close": true,
       "buttons": [

@@ -22,7 +22,7 @@
    */
   const component = {
     name: 'er_rel_trainer',
-    ccm: 'https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/ccm/ccm.js',
+    ccm: 'https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/ccm/ccm.min.js',
     config: {
 //    "anytime_finish": true,
 //    "auto_arrows": true,
@@ -35,10 +35,10 @@
       "correction": true,
       "css": [ "ccm.load",
         [  // is loaded serially (not in parallel)
-          "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/bootstrap-5/css/bootstrap.css",
-          "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources/styles.css",
+          "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/bootstrap-5/css/bootstrap.min.css",
+          "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources/styles.min.css",
         ],
-        { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/bootstrap-5/css/bootstrap-fonts.css", "context": "head" }
+        { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/bootstrap-5/css/bootstrap-fonts.min.css", "context": "head" }
       ],
 //    "data": { "store": [ "ccm.store" ] },
       "default": {
@@ -52,7 +52,7 @@
       "helper": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/ccm/helper.mjs" ],
 //    "hide_own_fk": true,
       "html": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources/templates.mjs" ],
-      "lang": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/lang/ccm.lang.js", {
+      "lang": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/lang/ccm.lang.min.js", {
         "translations": {
           "de": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources.mjs#de" ],
           "en": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources.mjs#en" ]
@@ -62,7 +62,7 @@
       "license": true,
       "logos": "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources/img/logos/logos.jpg",
       "modal": {
-        "attr": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/modal/ccm.modal.js", {
+        "attr": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/modal/ccm.modal.min.js", {
           "backdrop_close": true,
           "breakpoints": false,
           "buttons": [],
@@ -70,13 +70,13 @@
           "content": "",
           "css": [ "ccm.load",
             [  // serial
-              "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/bootstrap-5/css/bootstrap.css",
-              "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources/modal.css"
+              "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/bootstrap-5/css/bootstrap.min.css",
+              "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources/modal.min.css"
             ],
-            { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/bootstrap-5/css/bootstrap-fonts.css", "context": "head" }
+            { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/bootstrap-5/css/bootstrap-fonts.min.css", "context": "head" }
           ]
         } ],
-        "legend": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/modal/ccm.modal.js", {
+        "legend": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/modal/ccm.modal.min.js", {
           "backdrop_close": true,
           "buttons": "",
           "closed": true,
@@ -94,7 +94,7 @@
       "shuffle": true,
       "skip": true,
       "text": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources.mjs#de" ],
-//    "user": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/user/ccm.user.js" ]
+//    "user": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/latest/user/ccm.user.min.js" ]
     },
     /**
      * @class

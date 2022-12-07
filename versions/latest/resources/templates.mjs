@@ -6,7 +6,7 @@
  * @version latest (v2)
  */
 
-import { html, render } from 'https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/lit/lit.js';
+import { html, render } from 'https://eild-nrw.github.io/er_rel_trainer/versions/latest/libs/lit/lit.min.js';
 export { render };
 
 /**

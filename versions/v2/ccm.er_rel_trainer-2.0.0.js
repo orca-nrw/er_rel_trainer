@@ -48,7 +48,7 @@
   const component = {
     name: 'er_rel_trainer',
     version: [ 2, 0, 0 ],
-    ccm: 'https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/ccm.js',
+    ccm: 'https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/ccm.min.js',
     config: {
 //    "anytime_finish": true,
 //    "auto_arrows": true,
@@ -78,7 +78,7 @@
       "helper": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/helper.mjs" ],
 //    "hide_own_fk": true,
       "html": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources/templates.mjs" ],
-      "lang": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/lang/ccm.lang.js", {
+      "lang": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/lang/ccm.lang.min.js", {
         "translations": {
           "de": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.mjs#de" ],
           "en": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.mjs#en" ]
@@ -88,7 +88,7 @@
       "license": true,
       "logos": "https://eild-nrw.github.io/er_rel_trainer/versions/latest/resources/img/logos/logos.jpg",
       "modal": {
-        "attr": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/ccm.modal.js", {
+        "attr": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/ccm.modal.min.js", {
           "backdrop_close": true,
           "breakpoints": false,
           "buttons": [],
@@ -102,7 +102,7 @@
             { "url": "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-5/css/bootstrap-fonts.css", "context": "head" }
           ]
         } ],
-        "legend": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/ccm.modal.js", {
+        "legend": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/ccm.modal.min.js", {
           "backdrop_close": true,
           "buttons": "",
           "closed": true,
@@ -120,7 +120,7 @@
       "shuffle": true,
       "skip": true,
       "text": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/resources.mjs#de" ],
-//    "user": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/user/ccm.user.js" ]
+//    "user": [ "ccm.start", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/user/ccm.user.min.js" ]
     },
     /**
      * @class
