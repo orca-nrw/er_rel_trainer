@@ -22,12 +22,12 @@
       "content": "My Content",
       "css": [ "ccm.load",
         [  // serial
-          "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-4/css/bootstrap.css",
-          "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/resources/styles.css"
+          "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/bootstrap-4/css/bootstrap.min.css",
+          "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/resources/styles.min.css"
         ]
       ],
-      "helper": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/helper.mjs" ],
-      "html": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/resources/templates.mjs" ],
+      "helper": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/ccm/helper.min.mjs" ],
+      "html": [ "ccm.load", "https://eild-nrw.github.io/er_rel_trainer/versions/v2/libs/modal/resources/templates.min.mjs" ],
 //    "onclose": instance => {},
       "title": "My Header"
     },
