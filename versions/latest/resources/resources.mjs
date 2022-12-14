@@ -7,7 +7,7 @@
  */
 
 /**
- * Phrases data.
+ * Phrases data
  * @type {phrase_data[]}
  */
 export const phrases = [
@@ -332,6 +332,17 @@ export const phrases = [
     ]
   },
   {
+    "text": "Für ein Unternehmen sollen die Mitarbeiter verwaltet werden, wobei jeder Mitarbeiter genau einen Vorgesetzten und jeder Vorgesetzte mindestens einen Mitarbeiter haben soll.",
+    "entities": [ "Mitarbeiter", "Mitarbeiter" ],
+    "roles": [ "", "Vorgesetzter" ],
+    "relation": "hat Vorgesetzten",
+    "solution": [ "1", "n" ],
+    "comments": [
+      "Ein Mitarbeiter hat immer genau einen Vorgesetzten.",
+      "Ein Vorgesetzter hat mindestens einen Mitarbeiter."
+    ]
+  },
+  {
     "text": "Beim Standesamt wird verwaltet, welche Personen gerade miteinander verheiratet sind.",
     "entities": [ "Person", "Person" ],
     "relation": "verheiratet",
@@ -350,17 +361,6 @@ export const phrases = [
     "comments": [
       "Ein Ordner hat entweder keinen oder genau einen Oberordner.",
       "Ein Oberordner enthält keinen, einen oder mehrere Unterordner."
-    ]
-  },
-  {
-    "text": "Für ein Unternehmen sollen die Mitarbeiter verwaltet werden, wobei jeder Mitarbeiter genau einen Vorgesetzten und jeder Vorgesetzte mindestens einen Mitarbeiter haben soll.",
-    "entities": [ "Mitarbeiter", "Mitarbeiter" ],
-    "roles": [ "", "Vorgesetzter" ],
-    "relation": "hat Vorgesetzten",
-    "solution": [ "1", "n" ],
-    "comments": [
-      "Ein Mitarbeiter hat immer genau einen Vorgesetzten.",
-      "Ein Vorgesetzter hat mindestens einen Mitarbeiter."
     ]
   },
   {
@@ -424,21 +424,21 @@ export const phrases = [
     "solution": [ "n", "cn", "cn", "cn" ],
     "comments": [
       "Ein Angeklagter hat an mindestens einer Gerichtsverhandlungen teilgenommen.",
-      "Ein Richter hat an keine, eine oder mehrere Gerichtsverhandlungen geleitet.",
+      "Ein Richter hat keine, eine oder mehrere Gerichtsverhandlungen geleitet.",
       "Ein Staatsanwalt war bisher an keiner, einer oder mehreren Gerichtsverhandlungen beteiligt.",
       "Ein Verteidiger war bisher an keiner, einer oder mehreren Gerichtsverhandlungen beteiligt."
     ]
   },
   {
-    "text": "Über eine eigens dafür aufgesetzte Datenbank soll protokolliert werden, welche Veranstaltung an welcher Location mit welchen Teilnehmern mit welchen Sponsoren stattgefunden hat.",
-    "entities": [ "Veranstaltung", "Location", "Teilnehmer", "Sponsor" ],
-    "relation": "findet statt",
-    "solution": [ "n", "n", "n", "n" ],
+    "text": "Die Beteiligten an Buchverfilmungen sollen verwaltet werden.",
+    "entities": [ "Schauspieler", "Regisseur", "Produzent", "Buchautor" ],
+    "relation": "Buchverfilmung",
+    "solution": [ "cn", "cn", "cn", "cn" ],
     "comments": [
-      "Eine in der Datenbank vorhandene Veranstaltung wurde mindestens einmal protokolliert.",
-      "Eine in der Datenbank vorhandene Location wurde bisher gar nicht, einmal oder bereits mehrmals protokolliert.",
-      "Ein in der Datenbank vorhandener Teilnehmer hat mindestens an einer Veranstaltung teilgenommen.",
-      "Ein in der Datenbank vorhandener Sponsor hat sich an mindestens einer Veranstaltung beteiligt."
+      "Ein Schauspieler ist an keiner, einer oder mehreren Buchverfilmungen beteiligt.",
+      "Ein Regisseur hat bei keiner, einer oder mehreren Buchverfilmung die Regie geführt.",
+      "Ein Produzent hat keine, eine oder mehrere Buchverfilmungen mitproduziert.",
+      "Ein Buchautor hat bisher keine, eine oder mehrere Buchverfilmungen erreicht."
     ]
   },
   {
@@ -516,7 +516,7 @@ export const phrases = [
 ];
 
 /**
- * Notations data.
+ * Notations data
  * @type {Object.<string,notation_data>}
  */
 export const notations = {
@@ -558,7 +558,7 @@ export const notations = {
 };
 
 /**
- * German translations.
+ * German translations
  * @type {Object.<string,string>}
  */
 export const de = {
@@ -647,7 +647,7 @@ export const de = {
 };
 
 /**
- * English translations.
+ * English translations
  * @type {Object.<string,string>}
  */
 export const en = {
