@@ -5,10 +5,10 @@ Mit dem ER-REL-Trainer wird, ausgehend von einer Phrase, die Überführung einer
 Es gilt die nötigen Tabellen anzulegen, die erforderlichen Schlüsselattribute zu ergänzen und die Richtung festzulegen, in der die Tabellen miteinander in Beziehung stehen.
 
 ## Systemanforderungen
-Voraussetzung für die App ist ein gängiger Webbrowser (Firefox, Google Chrome, Microsoft Edge, Opera, Safari) mit aktiviertem JavaScript in einer aktuellen Version.
+Voraussetzung für die App ist ein gängiger Webbrowser (z.B. Firefox, Google Chrome, Microsoft Edge, Opera, Safari) mit aktiviertem JavaScript in einer aktuellen Version.
 
 ## Installation
-Die Webanwendung kann über GitHub Pages in ihrer Basiskonfiguration ohne Installation über die folgende Web-URL direkt genutzt werden: https://eild-nrw.github.io/er_rel_trainer/.
+Die Webanwendung kann über GitHub Pages in ihrer Basiskonfiguration ohne Installation über die folgende Web-URL direkt genutzt werden: https://orca-nrw.github.io/er_rel_trainer/.
 Über die Web-URL ist die Webanwendung immer auf dem neusten Stand und muss nicht von Hand aktualisiert werden.
 Wird die Web-URL auf einem mobilen Gerät (Smartphone, Tablet) aufgerufen, kann die App von dort aus auf den Homescreen gelegt und anschließend wie eine native Mobile App genutzt werden.
 
@@ -44,13 +44,13 @@ Der `libs`-Ordner enthält wiederverwendete Webkomponenten, Bibliotheken und Fra
 Der `versions`-Ordner enthält alles was nötig ist, um auch ältere Versionen weiter lauffähig zu halten und um die Anwendung auch in anderen Webseiten (mit absoluten statt relativen Pfaden) flexibel einsetzen zu können.
 
 ## Lizenzen
-Der [ER-REL-Trainer](https://github.com/EILD-nrw/er_rel_trainer) wurde
+Der [ER-REL-Trainer](https://github.com/orca-nrw/er_rel_trainer) wurde
 von [André Kless](https://h-brs.de/de/inf/andre-kless) im Rahmen
-des [EILD-Projekts](https://github.com/EILD-nrw) an
+des [EILD-Projekts](https://medien.hs-duesseldorf.de/eild) an
 der [Hochschule Bonn-Rhein-Sieg](https://h-brs.de) entwickelt.
 Dieses Repository enthält Software unter [MIT-Lizenz](/LICENSE) und Content
 unter [CC0-Lizenz](https://creativecommons.org/publicdomain/zero/1.0/deed.de).
-Content sind insbesondere die Phrasen in der Basiskonfiguration.
+Content sind insbesondere die Phrasen in der Basiskonfiguration, ausgenommen sind die verwendeten Logos.
 
 ## Kontakt
 Wir freuen uns über jedes Feedback und beantworten gern Ihre Fragen.
