@@ -46,7 +46,7 @@ Der `versions`-Ordner enthält alles was nötig ist, um auch ältere Versionen w
 ## Lizenzen
 Der [ER-REL-Trainer](https://github.com/orca-nrw/er_rel_trainer) wurde
 von [André Kless](https://h-brs.de/de/inf/andre-kless) im Rahmen
-des [EILD-Projekts](https://medien.hs-duesseldorf.de/eild) an
+des [EILD-Projekts](https://eild.nrw) an
 der [Hochschule Bonn-Rhein-Sieg](https://h-brs.de) entwickelt.
 Dieses Repository enthält Software unter [MIT-Lizenz](/LICENSE) und Content
 unter [CC0-Lizenz](https://creativecommons.org/publicdomain/zero/1.0/deed.de).
