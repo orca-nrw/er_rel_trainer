@@ -37,7 +37,7 @@ Der Fortschritt kann, wenn gewünscht, offline-fähig lokal gespeichert werden, 
 Dies kann bei Bedarf in der `configs.js` aktiviert werden.
 
 ## Code-Dokumentation
-Eine aus den Dokumentationskommentaren generierte Code-Dokumentation für Entwickler findet sich unter https://eild-nrw.github.io/er_rel_trainer/docs/.
+Eine aus den Dokumentationskommentaren generierte Code-Dokumentation für Entwickler findet sich unter https://orca-nrw.github.io/er_rel_trainer/docs/.
 
 Der `libs`-Ordner enthält wiederverwendete Webkomponenten, Bibliotheken und Frameworks.
 
