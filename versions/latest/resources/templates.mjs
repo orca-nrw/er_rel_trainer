@@ -1279,7 +1279,7 @@ export function tableDialogFooter( app ) {
         <span data-lang="badge_ak_title">${ app.text.badge_ak_title }</span>
       </div>
       <div class="me-2 mb-1 d-flex align-items-center">
-        <span class="badge bg-warning" data-lang="badge_fk">${ app.text.fk }</span>:&nbsp;
+        <span class="badge bg-warning" data-lang="badge_fk">${ app.text.badge_fk }</span>:&nbsp;
         <span data-lang="badge_fk_title">${ app.text.badge_fk_title }</span>
       </div>
     </div>

@@ -817,9 +817,9 @@ import{html,render}from"https://eild-nrw.github.io/er_rel_trainer/versions/v2/li
         <span data-lang="badge_ak_title">${app.text.badge_ak_title}</span>
       </div>
       <div class="me-2 mb-1 d-flex align-items-center">
-        <span class="badge bg-warning" data-lang="badge_fk">${app.text.fk}</span>:&nbsp;
+        <span class="badge bg-warning" data-lang="badge_fk">${app.text.badge_fk}</span>:&nbsp;
         <span data-lang="badge_fk_title">${app.text.badge_fk_title}</span>
       </div>
     </div>
   `}function getTableName(app,phrase,table){return table&&phrase.entities[table-1]||phrase.relation||app.text.hierarchy_is}function getAttributeName(app,phrase,attr){const getRole=entity_nr=>attr&&phrase.roles&&phrase.roles[entity_nr-1];const is_recursive=phrase.entities.length===2&&phrase.entities[0]===phrase.entities[1];const name=getTableName(app,phrase,attr);return toID(getRole(attr)||is_recursive&&attr===2&&!getRole(1)&&name+"2"||name)}function toID(str){return str.toLowerCase().trim().replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/ß/g,"ss").replace(/\W/g,"_")+"_id"}
-//# sourceMappingURL=templates.min.mjs.map
+//# sourceMappingURL=.min.mjs.map
